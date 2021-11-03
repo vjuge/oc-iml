@@ -10,3 +10,7 @@ Use Python 3.9
 
 `jupyter-notebook --notebook-dir=/home/vincent/devel/vjuge/oc-iml`
 
+or
+
+`jupyter-lab`
+
