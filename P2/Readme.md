@@ -2,19 +2,21 @@
 
 ## Introduction
 
-In the following notebooks, we'll explore the content of [OpenFoodFact](https://world.openfoodfacts.org/) dataset
+In the following notebooks, we'll explore the content of the [OpenFoodFact](https://world.openfoodfacts.org/) dataset
 
-Prior to run, please download the dataset at [https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv](), and **copy it into the current folder**
+Prior to run, 
 
-Also, you can discover the [dataset description](./input/data-fields.txt)
+1. download the dataset at [https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv](), and **copy it into the current folder**
 
-Prior to run the notebooks, intall the required dependencies : `pip install -r requirements.txt`
+2. Also, you can discover the [dataset description](./input/data-fields.txt)
 
-Please run each notebook in the correct order : `P2_NN_xxxx.ipynb`, where `NN` represent the ordinal number.
+3. Intall the required dependencies : `pip install -r requirements.txt`
 
-The file [module_P2_utils](./module_P2_utils.ipynb) contains some custom functions that help the analysis.
+Please run each notebook in the correct order : `P2_NN_xxxx.ipynb`, where `NN` represent the ordered number.
 
-This dataset is quite huge, so please ensure you have enough memory prior running them (16Gb Ram minimum)
+Additional file [module_P2_utils](./module_P2_utils.ipynb) contains some custom functions that help the analysis.
+
+This dataset is quite huge, so please ensure you have enough memory and disk space prior running them (16Gb Ram minimum, 8 Gb disk)
 
 ## Target
 
@@ -27,3 +29,8 @@ The goal is to
 * Propose an application idea
 
 Show representations of the dataset through univariate and multivariate analysis
+
+## Presentation
+
+Slides of the presentation are [located here](https://docs.google.com/presentation/d/1s1B7XM3PJ1mSm9VCMfLitMT-luwe4xkb39hQyi2EQ8E/edit?usp=sharing)
+
