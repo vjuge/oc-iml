@@ -22,6 +22,8 @@ filelock==3.3.2
 Flask==2.0.2
 folium==0.12.1.post1
 fsspec==2021.10.1
+geographiclib==1.52
+geopy==2.2.0
 grpcio==1.41.1
 idna==2.10
 ipykernel==5.5.3
