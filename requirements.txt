@@ -27,6 +27,7 @@ geopy==2.2.0
 grpcio==1.41.1
 idna==2.10
 ipykernel==5.5.3
+ipympl==0.8.7
 ipython==7.22.0
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
