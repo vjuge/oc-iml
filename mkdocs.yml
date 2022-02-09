@@ -29,6 +29,7 @@ nav:
   - 'P3/P3_02.ipynb'
 - Module P4:
   - 'P4/index.md'
+  - TP 1: 'P4/TP/01_Explorez_vos_données_avec_des_algorithmes_non_supervisés/index.md'
 
 plugins:
   - search
