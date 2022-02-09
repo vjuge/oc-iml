@@ -135,8 +135,10 @@ P_01/input/open-food-facts/openfoodfacts-mongodbdump.tar
 .idea
 
 
-P2/Exercice/P_01_decrivez-et-nettoyez-votre-jeu-de-donnees
-/P2/doc/webinaire
-/P2/input
-/P2/tmp/
-/P2/en.openfoodfacts.org.products.csv
+/P2/Exercice/P_01_decrivez-et-nettoyez-votre-jeu-de-donnees
+/modules/P2/doc/webinaire
+/modules/P2/input
+/modules/P2/tmp/
+/modules/P2/en.openfoodfacts.org.products.csv
+
+/public

@@ -1,1 +1,0 @@
-Webinaire d'example : [replay](https://app.livestorm.co/openclassrooms-1/session-libre-interpretez-des-tendances-a-laide-de-visualisations-graphiques?s=3e43e7ca-27c0-485f-be85-6fe9f340b526)

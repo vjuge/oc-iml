@@ -14,3 +14,11 @@ or
 
 `jupyter-lab`
 
+
+## Mkdocs
+
+deploy to github pages : `mkdocs gh-deploy`
+
+build: `mkdocs build`
+
+local dev: `mkdocs serve`

@@ -1,4 +1,4 @@
-# Exploratory Data Analysis
+# Module P2
 
 ## Introduction
 
