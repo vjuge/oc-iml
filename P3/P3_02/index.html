@@ -17,7 +17,7 @@
     
     
       
-        <title>P3 02 - OCR Ingenieur Machine Learning</title>
+        <title>P3 - Modeling & Predictions - OCR Ingenieur Machine Learning</title>
       
     
     
@@ -33,8 +33,8 @@
       
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#part-i-prediction-model-for-ghg-emission" class="md-skip">
+        <a href="#p3-modeling-predictions" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              P3 02
+              P3 - Modeling &amp; Predictions
             
           </span>
         </div>
@@ -261,7 +261,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_01_loading_cleaning/" class="md-nav__link">
-        P2 01 loading cleaning
+        CLEANING
       </a>
     </li>
   
@@ -275,7 +275,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_02_Quanti/" class="md-nav__link">
-        P2 02 Quanti
+        Quantitative Analysis
       </a>
     </li>
   
@@ -289,7 +289,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_03_Quali/" class="md-nav__link">
-        P2 03 Quali
+        Qualitative Analysis
       </a>
     </li>
   
@@ -303,7 +303,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_04_Analysis_Correlation/" class="md-nav__link">
-        P2 04 Analysis Correlation
+        Analysis focused on Quantitative features
       </a>
     </li>
   
@@ -317,7 +317,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_05_application/" class="md-nav__link">
-        P2 05 application
+        Application
       </a>
     </li>
   
@@ -381,7 +381,7 @@
   
     <li class="md-nav__item">
       <a href="../P3_01/" class="md-nav__link">
-        P3 01
+        P3 - Data Preparation
       </a>
     </li>
   
@@ -404,12 +404,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          P3 02
+          P3 - Modeling &amp; Predictions
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        P3 02
+        P3 - Modeling &amp; Predictions
       </a>
       
         
@@ -428,48 +428,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#part-i-prediction-model-for-ghg-emission" class="md-nav__link">
+    PART I - Prediction Model for GHG Emission
+  </a>
+  
+    <nav class="md-nav" aria-label="PART I - Prediction Model for GHG Emission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     Setup
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#predition-function" class="md-nav__link">
     Predition Function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#preprocessing-optimization" class="md-nav__link">
     Preprocessing Optimization
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#models-compute" class="md-nav__link">
     Models compute
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#models-comparison" class="md-nav__link">
     Models Comparison
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#model-choice" class="md-nav__link">
     Model Choice
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#predictions" class="md-nav__link">
     Predictions
   </a>
@@ -509,10 +517,49 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     Conclusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-ii-energy-used-and-energystar" class="md-nav__link">
+    PART II - Energy Used and EnergyStar
+  </a>
+  
+    <nav class="md-nav" aria-label="PART II - Energy Used and EnergyStar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#energystar-score-impact" class="md-nav__link">
+    EnergyStar Score Impact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siteenergyuse-prediction" class="md-nav__link">
+    SiteEnergyUse prediction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix" class="md-nav__link">
+    APPENDIX
   </a>
   
 </li>
@@ -621,48 +668,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#part-i-prediction-model-for-ghg-emission" class="md-nav__link">
+    PART I - Prediction Model for GHG Emission
+  </a>
+  
+    <nav class="md-nav" aria-label="PART I - Prediction Model for GHG Emission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     Setup
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#predition-function" class="md-nav__link">
     Predition Function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#preprocessing-optimization" class="md-nav__link">
     Preprocessing Optimization
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#models-compute" class="md-nav__link">
     Models compute
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#models-comparison" class="md-nav__link">
     Models Comparison
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#model-choice" class="md-nav__link">
     Model Choice
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#predictions" class="md-nav__link">
     Predictions
   </a>
@@ -702,10 +757,49 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     Conclusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-ii-energy-used-and-energystar" class="md-nav__link">
+    PART II - Energy Used and EnergyStar
+  </a>
+  
+    <nav class="md-nav" aria-label="PART II - Energy Used and EnergyStar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#energystar-score-impact" class="md-nav__link">
+    EnergyStar Score Impact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siteenergyuse-prediction" class="md-nav__link">
+    SiteEnergyUse prediction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix" class="md-nav__link">
+    APPENDIX
   </a>
   
 </li>
@@ -1759,12 +1853,17 @@ Licensed under the Apache License, Version 2.0.
     <!-- End of mathjax configuration --><div class="jupyter-wrapper">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="part-i-prediction-model-for-ghg-emission">PART I - Prediction Model for GHG Emission<a class="anchor-link" href="#part-i-prediction-model-for-ghg-emission">&#182;</a></h1>
+<h1 id="p3-modeling-predictions">P3 - Modeling &amp; Predictions<a class="anchor-link" href="#p3-modeling-predictions">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="setup">Setup<a class="anchor-link" href="#setup">&#182;</a></h2>
+<h2 id="part-i-prediction-model-for-ghg-emission">PART I - Prediction Model for GHG Emission<a class="anchor-link" href="#part-i-prediction-model-for-ghg-emission">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="setup">Setup<a class="anchor-link" href="#setup">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -2093,7 +2192,7 @@ feats
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="predition-function">Predition Function<a class="anchor-link" href="#predition-function">&#182;</a></h2>
+<h3 id="predition-function">Predition Function<a class="anchor-link" href="#predition-function">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -2348,7 +2447,7 @@ runModel(DummyRegressor(strategy="mean"));
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="preprocessing-optimization">Preprocessing Optimization<a class="anchor-link" href="#preprocessing-optimization">&#182;</a></h2><p>We use a simple Linear Regression to assess what are the best pre processing steps to consider: which ones optimizes our results</p>
+<h3 id="preprocessing-optimization">Preprocessing Optimization<a class="anchor-link" href="#preprocessing-optimization">&#182;</a></h3><p>We use a simple Linear Regression to assess what are the best pre processing steps to consider: which ones optimizes our results</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -2552,7 +2651,7 @@ for i in range(5):
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="models-compute">Models compute<a class="anchor-link" href="#models-compute">&#182;</a></h2>
+<h3 id="models-compute">Models compute<a class="anchor-link" href="#models-compute">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3177,7 +3276,7 @@ finished compute models in 0:00:20.500926
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="models-comparison">Models Comparison<a class="anchor-link" href="#models-comparison">&#182;</a></h2>
+<h3 id="models-comparison">Models Comparison<a class="anchor-link" href="#models-comparison">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3317,7 +3416,7 @@ for r in ax3.containers:
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="model-choice">Model Choice<a class="anchor-link" href="#model-choice">&#182;</a></h2><p>As we can see, with default hyper parameters, the most interesting model is RFR, because it's the one with the best ratio score / error / compute time.</p>
+<h3 id="model-choice">Model Choice<a class="anchor-link" href="#model-choice">&#182;</a></h3><p>As we can see, with default hyper parameters, the most interesting model is RFR, because it's the one with the best ratio score / error / compute time.</p>
 <p>In the next section we run this model with several hyper parameters and cv.</p>
 <p>Please note, one could consider also:</p>
 <ul>
@@ -3472,7 +3571,7 @@ print(ret['RMSE'])</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="predictions">Predictions<a class="anchor-link" href="#predictions">&#182;</a></h2>
+<h3 id="predictions">Predictions<a class="anchor-link" href="#predictions">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3591,7 +3690,7 @@ def predict_best_model(
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="precision-visualization">Precision Visualization<a class="anchor-link" href="#precision-visualization">&#182;</a></h3>
+<h4 id="precision-visualization">Precision Visualization<a class="anchor-link" href="#precision-visualization">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -3707,7 +3806,7 @@ print(show_strikes(X).mean())
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="precision-by-neighborhood">Precision by Neighborhood<a class="anchor-link" href="#precision-by-neighborhood">&#182;</a></h3>
+<h4 id="precision-by-neighborhood">Precision by Neighborhood<a class="anchor-link" href="#precision-by-neighborhood">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -3884,7 +3983,7 @@ sns.catplot(data=by_neighbors, height = 5, aspect=2, orient='h').set(title='Pred
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="precisions-for-buildings-given-characteristics">Precisions for Buildings' given characteristics<a class="anchor-link" href="#precisions-for-buildings-given-characteristics">&#182;</a></h3><ul>
+<h4 id="precisions-for-buildings-given-characteristics">Precisions for Buildings' given characteristics<a class="anchor-link" href="#precisions-for-buildings-given-characteristics">&#182;</a></h4><ul>
 <li>Building Type</li>
 <li>Gross Floor Area</li>
 <li>Number of Floors</li>
@@ -4779,7 +4878,7 @@ pd.DataFrame(byCategory)</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="precision-depending-of-ghgemissions-range">Precision depending of GHGEmissions range<a class="anchor-link" href="#precision-depending-of-ghgemissions-range">&#182;</a></h3><p>We evaluate the strike of our model for different range of GHGEmissions</p>
+<h4 id="precision-depending-of-ghgemissions-range">Precision depending of GHGEmissions range<a class="anchor-link" href="#precision-depending-of-ghgemissions-range">&#182;</a></h4><p>We evaluate the strike of our model for different range of GHGEmissions</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -4928,7 +5027,7 @@ average HIGH difference:  13.073225884965362
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h2>
+<h3 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -4942,7 +5041,7 @@ average HIGH difference:  13.073225884965362
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="part-ii-energy-used-and-energystar">PART II - Energy Used and EnergyStar<a class="anchor-link" href="#part-ii-energy-used-and-energystar">&#182;</a></h1>
+<h2 id="part-ii-energy-used-and-energystar">PART II - Energy Used and EnergyStar<a class="anchor-link" href="#part-ii-energy-used-and-energystar">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -4953,7 +5052,7 @@ average HIGH difference:  13.073225884965362
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="energystar-score-impact">EnergyStar Score Impact<a class="anchor-link" href="#energystar-score-impact">&#182;</a></h2>
+<h3 id="energystar-score-impact">EnergyStar Score Impact<a class="anchor-link" href="#energystar-score-impact">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -5109,7 +5208,7 @@ print(ret['RMSE'])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="siteenergyuse-prediction">SiteEnergyUse prediction<a class="anchor-link" href="#siteenergyuse-prediction">&#182;</a></h2>
+<h3 id="siteenergyuse-prediction">SiteEnergyUse prediction<a class="anchor-link" href="#siteenergyuse-prediction">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -5320,7 +5419,7 @@ print(ret['RMSE'])</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="appendix">APPENDIX<a class="anchor-link" href="#appendix">&#182;</a></h1>
+<h2 id="appendix">APPENDIX<a class="anchor-link" href="#appendix">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -5421,34 +5520,6 @@ gram()</div>
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Reading list :</p>
-<p><a href="https://towardsdatascience.com/how-to-differentiate-between-scaling-normalization-and-log-transformations-69873d365a94">https://towardsdatascience.com/how-to-differentiate-between-scaling-normalization-and-log-transformations-69873d365a94</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Multicollinearity">https://en.wikipedia.org/wiki/Multicollinearity</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">https://en.wikipedia.org/wiki/Ordinary_least_squares</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Occam%27s_razor">https://en.wikipedia.org/wiki/Occam%27s_razor</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Minimum_description_length">https://en.wikipedia.org/wiki/Minimum_description_length</a></p>
-<p><a href="https://towardsdatascience.com/features-correlations-data-leakage-confounded-features-and-other-things-that-can-make-your-deep-771bcaf84f9f">https://towardsdatascience.com/features-correlations-data-leakage-confounded-features-and-other-things-that-can-make-your-deep-771bcaf84f9f</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables">https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables</a></p>
-<p><a href="https://machinelearningmastery.com/data-leakage-machine-learning/">https://machinelearningmastery.com/data-leakage-machine-learning/</a></p>
-<p><a href="https://towardsdatascience.com/what-are-rmse-and-mae-e405ce230383">https://towardsdatascience.com/what-are-rmse-and-mae-e405ce230383</a></p>
-<p><a href="https://towardsdatascience.com/guide-to-encoding-categorical-features-using-scikit-learn-for-machine-learning-5048997a5c79">https://towardsdatascience.com/guide-to-encoding-categorical-features-using-scikit-learn-for-machine-learning-5048997a5c79</a></p>
-<p><a href="https://scikit-learn.org/stable/auto_examples/compose/plot_column_transformer_mixed_types.html">https://scikit-learn.org/stable/auto_examples/compose/plot_column_transformer_mixed_types.html</a></p>
-<p>very important article why to normalize features: <a href="https://towardsdatascience.com/how-to-differentiate-between-scaling-normalization-and-log-transformations-69873d365a94">https://towardsdatascience.com/how-to-differentiate-between-scaling-normalization-and-log-transformations-69873d365a94</a></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Notes personnelles :</p>
-<p>data leakage, à cause de la corrélation entre features, le fait de bouger un peu une feature, va non seulement influencer le resultat mais aussi les features elles memes, donc la prédiction sera plus aléatoire</p>
-<p>scaling, normalisation, : à ne faire que sur le train set</p>
-<p>transformation : à faire sur train et test set</p>
-<p>certaines features ne suivent pas des distributions normales, mais on peut les transformer pour y parvenir:</p>
-
-</div>
-</div>
 </div>
 
 
@@ -5465,7 +5536,7 @@ gram()</div>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../P3_01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: P3 01" rel="prev">
+        <a href="../P3_01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: P3 - Data Preparation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -5474,7 +5545,7 @@ gram()</div>
               <span class="md-footer__direction">
                 Previous
               </span>
-              P3 01
+              P3 - Data Preparation
             </div>
           </div>
         </a>

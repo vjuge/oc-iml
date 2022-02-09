@@ -17,7 +17,7 @@
     
     
       
-        <title>P3 01 - OCR Ingenieur Machine Learning</title>
+        <title>P3 - Data Preparation - OCR Ingenieur Machine Learning</title>
       
     
     
@@ -33,8 +33,8 @@
       
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#merging-two-datasets" class="md-skip">
+        <a href="#p3-data-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              P3 01
+              P3 - Data Preparation
             
           </span>
         </div>
@@ -261,7 +261,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_01_loading_cleaning/" class="md-nav__link">
-        P2 01 loading cleaning
+        CLEANING
       </a>
     </li>
   
@@ -275,7 +275,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_02_Quanti/" class="md-nav__link">
-        P2 02 Quanti
+        Quantitative Analysis
       </a>
     </li>
   
@@ -289,7 +289,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_03_Quali/" class="md-nav__link">
-        P2 03 Quali
+        Qualitative Analysis
       </a>
     </li>
   
@@ -303,7 +303,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_04_Analysis_Correlation/" class="md-nav__link">
-        P2 04 Analysis Correlation
+        Analysis focused on Quantitative features
       </a>
     </li>
   
@@ -317,7 +317,7 @@
   
     <li class="md-nav__item">
       <a href="../../P2/P2_05_application/" class="md-nav__link">
-        P2 05 application
+        Application
       </a>
     </li>
   
@@ -389,9 +389,222 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          P3 - Data Preparation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        P3 01
+        P3 - Data Preparation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#merging-two-datasets" class="md-nav__link">
+    Merging two datasets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
+    Exploratory Data Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploratory Data Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#location-of-buildings" class="md-nav__link">
+    Location of Buildings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-cleaning" class="md-nav__link">
+    Data Cleaning
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Cleaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empty-features-analysis" class="md-nav__link">
+    Empty Features analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliers-analysis" class="md-nav__link">
+    Outliers Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-sense-values" class="md-nav__link">
+    Non sense Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-engineering" class="md-nav__link">
+    Feature Engineering
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-age" class="md-nav__link">
+    Building Age
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-from-seattles-center-location" class="md-nav__link">
+    Distance From Seattle's center (Location)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features-cleanup" class="md-nav__link">
+    Features Cleanup
+  </a>
+  
+    <nav class="md-nav" aria-label="Features Cleanup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remove-non-wanted-buildings" class="md-nav__link">
+    Remove Non Wanted Buildings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-fill-nan" class="md-nav__link">
+    Remove &amp; Fill NaN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features-analysis" class="md-nav__link">
+    Features Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Features Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-correlations-analysis" class="md-nav__link">
+    Features Correlations Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objects-type-features" class="md-nav__link">
+    Objects type features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-features" class="md-nav__link">
+    Numerical Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Numerical Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distributions" class="md-nav__link">
+    Distributions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#univariate-analysis" class="md-nav__link">
+    Univariate Analysis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multivariate-analysis" class="md-nav__link">
+    Multivariate Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Multivariate Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#energy-ratios" class="md-nav__link">
+    Energy Ratios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -405,7 +618,7 @@
   
     <li class="md-nav__item">
       <a href="../P3_02/" class="md-nav__link">
-        P3 02
+        P3 - Modeling &amp; Predictions
       </a>
     </li>
   
@@ -499,6 +712,203 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#merging-two-datasets" class="md-nav__link">
+    Merging two datasets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
+    Exploratory Data Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploratory Data Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#location-of-buildings" class="md-nav__link">
+    Location of Buildings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-cleaning" class="md-nav__link">
+    Data Cleaning
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Cleaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empty-features-analysis" class="md-nav__link">
+    Empty Features analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliers-analysis" class="md-nav__link">
+    Outliers Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-sense-values" class="md-nav__link">
+    Non sense Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-engineering" class="md-nav__link">
+    Feature Engineering
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-age" class="md-nav__link">
+    Building Age
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-from-seattles-center-location" class="md-nav__link">
+    Distance From Seattle's center (Location)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features-cleanup" class="md-nav__link">
+    Features Cleanup
+  </a>
+  
+    <nav class="md-nav" aria-label="Features Cleanup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remove-non-wanted-buildings" class="md-nav__link">
+    Remove Non Wanted Buildings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-fill-nan" class="md-nav__link">
+    Remove &amp; Fill NaN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features-analysis" class="md-nav__link">
+    Features Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Features Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-correlations-analysis" class="md-nav__link">
+    Features Correlations Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objects-type-features" class="md-nav__link">
+    Objects type features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-features" class="md-nav__link">
+    Numerical Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Numerical Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distributions" class="md-nav__link">
+    Distributions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#univariate-analysis" class="md-nav__link">
+    Univariate Analysis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multivariate-analysis" class="md-nav__link">
+    Multivariate Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Multivariate Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#energy-ratios" class="md-nav__link">
+    Energy Ratios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1544,7 +1954,12 @@ Licensed under the Apache License, Version 2.0.
     }
     init_mathjax();
     </script>
-    <!-- End of mathjax configuration --><div class="jupyter-wrapper"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+    <!-- End of mathjax configuration --><div class="jupyter-wrapper">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="p3-data-preparation">P3 - Data Preparation<a class="anchor-link" href="#p3-data-preparation">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -1593,7 +2008,7 @@ warnings.filterwarnings("ignore")</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="merging-two-datasets">Merging two datasets<a class="anchor-link" href="#merging-two-datasets">&#182;</a></h1>
+<h2 id="merging-two-datasets">Merging two datasets<a class="anchor-link" href="#merging-two-datasets">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -2373,7 +2788,7 @@ df.drop_duplicates(["OSEBuildingID"], keep="last", inplace=True)
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="exploratory-data-analysis">Exploratory Data Analysis<a class="anchor-link" href="#exploratory-data-analysis">&#182;</a></h1>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis<a class="anchor-link" href="#exploratory-data-analysis">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -2697,7 +3112,7 @@ memory usage: 1.2+ MB
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="location-of-buildings">Location of Buildings<a class="anchor-link" href="#location-of-buildings">&#182;</a></h2>
+<h3 id="location-of-buildings">Location of Buildings<a class="anchor-link" href="#location-of-buildings">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -2780,7 +3195,7 @@ m</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="data-cleaning">Data Cleaning<a class="anchor-link" href="#data-cleaning">&#182;</a></h2>
+<h3 id="data-cleaning">Data Cleaning<a class="anchor-link" href="#data-cleaning">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -2853,7 +3268,7 @@ m</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="empty-features-analysis">Empty Features analysis<a class="anchor-link" href="#empty-features-analysis">&#182;</a></h3>
+<h4 id="empty-features-analysis">Empty Features analysis<a class="anchor-link" href="#empty-features-analysis">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -3065,7 +3480,7 @@ removing empty column:  Outlier
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="outliers-analysis">Outliers Analysis<a class="anchor-link" href="#outliers-analysis">&#182;</a></h3>
+<h4 id="outliers-analysis">Outliers Analysis<a class="anchor-link" href="#outliers-analysis">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3146,7 +3561,7 @@ removing empty column:  Outlier
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="non-sense-values">Non sense Values<a class="anchor-link" href="#non-sense-values">&#182;</a></h3>
+<h4 id="non-sense-values">Non sense Values<a class="anchor-link" href="#non-sense-values">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -3505,12 +3920,12 @@ df.drop(df.loc[df['DefaultData'] == True].index, inplace=True)</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="feature-engineering">Feature Engineering<a class="anchor-link" href="#feature-engineering">&#182;</a></h2>
+<h3 id="feature-engineering">Feature Engineering<a class="anchor-link" href="#feature-engineering">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="building-age">Building Age<a class="anchor-link" href="#building-age">&#182;</a></h3>
+<h4 id="building-age">Building Age<a class="anchor-link" href="#building-age">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3547,7 +3962,7 @@ df['BuildingAge'] = df.DataYear - df.YearBuilt</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="distance-from-seattles-center-location">Distance From Seattle's center (Location)<a class="anchor-link" href="#distance-from-seattles-center-location">&#182;</a></h3>
+<h4 id="distance-from-seattles-center-location">Distance From Seattle's center (Location)<a class="anchor-link" href="#distance-from-seattles-center-location">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3603,7 +4018,7 @@ df.drop(labels=['Latitude', 'Longitude'], axis=1, inplace=True)
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="features-cleanup">Features Cleanup<a class="anchor-link" href="#features-cleanup">&#182;</a></h2>
+<h3 id="features-cleanup">Features Cleanup<a class="anchor-link" href="#features-cleanup">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3818,7 +4233,7 @@ df.drop(['ComplianceStatus'], axis=1, inplace=True)</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="remove-non-wanted-buildings">Remove Non Wanted Buildings<a class="anchor-link" href="#remove-non-wanted-buildings">&#182;</a></h3><p>The requirements state we should make prediction for commercial building, so by extent, not for residential ones.</p>
+<h4 id="remove-non-wanted-buildings">Remove Non Wanted Buildings<a class="anchor-link" href="#remove-non-wanted-buildings">&#182;</a></h4><p>The requirements state we should make prediction for commercial building, so by extent, not for residential ones.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -3860,7 +4275,7 @@ df = df[~df['BuildingType'].str.contains("Multifamily")]</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="remove-fill-nan">Remove &amp; Fill NaN<a class="anchor-link" href="#remove-fill-nan">&#182;</a></h3>
+<h4 id="remove-fill-nan">Remove &amp; Fill NaN<a class="anchor-link" href="#remove-fill-nan">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -4172,12 +4587,12 @@ Name: NaturalGas(kBtu), dtype: float64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="features-analysis">Features Analysis<a class="anchor-link" href="#features-analysis">&#182;</a></h2>
+<h3 id="features-analysis">Features Analysis<a class="anchor-link" href="#features-analysis">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="features-correlations-analysis">Features Correlations Analysis<a class="anchor-link" href="#features-correlations-analysis">&#182;</a></h3>
+<h4 id="features-correlations-analysis">Features Correlations Analysis<a class="anchor-link" href="#features-correlations-analysis">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -4479,7 +4894,7 @@ df.drop(labels=['LargestPropertyUseTypeGFA'], axis=1, inplace=True)
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="objects-type-features">Objects type features<a class="anchor-link" href="#objects-type-features">&#182;</a></h3>
+<h4 id="objects-type-features">Objects type features<a class="anchor-link" href="#objects-type-features">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -4622,7 +5037,7 @@ for i, col in enumerate(feats):
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="numerical-features">Numerical Features<a class="anchor-link" href="#numerical-features">&#182;</a></h3>
+<h4 id="numerical-features">Numerical Features<a class="anchor-link" href="#numerical-features">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -4706,7 +5121,7 @@ for i, col in enumerate(feats):
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="distributions">Distributions<a class="anchor-link" href="#distributions">&#182;</a></h4>
+<h5 id="distributions">Distributions<a class="anchor-link" href="#distributions">&#182;</a></h5>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -4772,7 +5187,7 @@ plt.xscale('log')
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="univariate-analysis">Univariate Analysis<a class="anchor-link" href="#univariate-analysis">&#182;</a></h3>
+<h4 id="univariate-analysis">Univariate Analysis<a class="anchor-link" href="#univariate-analysis">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -4853,7 +5268,7 @@ sns.distplot(df.GHGEmissionsIntensity, ax=ax[1])</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="multivariate-analysis">Multivariate Analysis<a class="anchor-link" href="#multivariate-analysis">&#182;</a></h2>
+<h3 id="multivariate-analysis">Multivariate Analysis<a class="anchor-link" href="#multivariate-analysis">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -5058,7 +5473,7 @@ plt.show()
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="energy-ratios">Energy Ratios<a class="anchor-link" href="#energy-ratios">&#182;</a></h3>
+<h4 id="energy-ratios">Energy Ratios<a class="anchor-link" href="#energy-ratios">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -5567,13 +5982,13 @@ sns.barplot(x='BuildingType',y='SiteEnergyUse(kBtu)',data=df, ax=axes[1])</div>
       
       
         
-        <a href="../P3_02/" class="md-footer__link md-footer__link--next" aria-label="Next: P3 02" rel="next">
+        <a href="../P3_02/" class="md-footer__link md-footer__link--next" aria-label="Next: P3 - Modeling &amp;amp; Predictions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              P3 02
+              P3 - Modeling &amp; Predictions
             </div>
           </div>
           <div class="md-footer__button md-icon">
