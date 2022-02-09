@@ -13,6 +13,8 @@ dev_addr: '0.0.0.0:8080'
 
 theme:
   name: material
+  font:
+    code: Roboto Mono
 
 nav:
 - Home: index.md
@@ -34,7 +36,7 @@ nav:
 plugins:
   - search
   - mkdocs-jupyter :
-      ignore_h1_titles: True
+      ignore_h1_titles: False
       ignore:  ["P2/input/*"]
       include: ["P2/*.ipynb", "P3/*.ipynb", "P4/*.ipynb"]
       include_source: True
