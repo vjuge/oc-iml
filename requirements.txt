@@ -151,4 +151,5 @@ Werkzeug==2.0.2
 widgetsnbextension==3.5.1
 wrapt==1.13.3
 xgboost==1.5.1
+yellowbrick==1.4
 zipp==3.7.0
