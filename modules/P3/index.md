@@ -1,5 +1,14 @@
 # Module P3
 
+This Module is about to estimate the Green House Gas Emissions of Seattle's Buildings.
+
+Raw data are available [here](https://www.kaggle.com/city-of-seattle/sea-building-energy-benchmarking#2015-building-energy-benchmarking.csv)
+
+
+We will also evaluate the interest of [Energy Star](https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager/interpret-your-results/what) Score
+
+
+
 
 ## Reading List
 
