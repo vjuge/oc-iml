@@ -20,8 +20,9 @@ At the project's root: `oc-iml/ $`
 >
 >`docker build -t p5 ./modules/P5/evaluation/` 
 >
->`docker run -p 80:80 p5`
+>`docker run -e PORT=80 -p 80:80 p5`
 
+copy `notebook/vectorizer` to `src/utils/vectorizer` (included in the Dockerfile)
 
 ## Deploy
 
@@ -46,3 +47,18 @@ scale down / up:
 
 `heroku ps:scale web=0 -a ociml-module5`
 `heroku ps:scale web=1 -a ociml-module5`
+
+## Use
+
+deployed on heroku: 
+
+<https://ociml-module5.herokuapp.com/>
+
+
+### Dev
+
+`src $: flask run`
+
+or
+
+`gunicorn --bind 0.0.0.0:5000 main:app`
