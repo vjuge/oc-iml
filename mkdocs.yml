@@ -33,6 +33,11 @@ nav:
   - 'P4/index.md'
   - 'P4/P4_01.ipynb'
   - TP 1: 'P4/TP/01_Explorez_vos_données_avec_des_algorithmes_non_supervisés/index.md'
+- Module P5:
+  - 'P5/index.md'
+  - 'P5/notebook/index.md'
+  - 'P5/notebook/module5.ipynb'
+  - 'P5/app/src/app.py'
 
 plugins:
   - search
