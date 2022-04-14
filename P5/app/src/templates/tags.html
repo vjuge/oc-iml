@@ -1,0 +1,32 @@
+{% block title %}{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Find Tags</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+
+
+<form action="/tags" method="POST">
+
+    <div class="form-group">
+      <label>Text</label><br/>
+      <!-- <input type="text" class="form-control" id="username" name="username" placeholder="Select a username"> -->
+      <textarea cols="40" rows="5" id="inputtext" name="inputtext" placeholder="{{inputtext}}"></textarea>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Find tags</button>
+
+    <div class="form-group">
+        <label>tags: </label>
+        {{tags}}
+    </div>
+  </form>
+
+{% endblock %}
