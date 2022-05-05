@@ -4680,7 +4680,7 @@ print(classification_report(y_true, y_pred, target_names=mlb_b.classes_))</div>
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[154]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[180]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -4697,12 +4697,12 @@ print(classification_report(y_true, y_pred, target_names=mlb_b.classes_))</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">LatentDirichletAllocation</span>
 
-<span class="n">lda</span> <span class="o">=</span> <span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">lda</span> <span class="o">=</span> <span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">bow</span><span class="p">)</span>
 </pre></div>
 <div id="cell-36" class="clipboard-copy-txt">from sklearn.decomposition import LatentDirichletAllocation
 
-lda = LatentDirichletAllocation(n_components=100, random_state=0, n_jobs=-1)
+lda = LatentDirichletAllocation(n_components=200, random_state=0, n_jobs=-1)
 lda.fit(bow)</div>
     
         </div>
@@ -4719,13 +4719,13 @@ lda.fit(bow)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[154]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[180]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>LatentDirichletAllocation(n_components=100, n_jobs=-1, random_state=0)</pre>
+<pre>LatentDirichletAllocation(n_components=200, n_jobs=-1, random_state=0)</pre>
 </div>
 
 </div>
@@ -4739,7 +4739,7 @@ lda.fit(bow)</div>
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[155]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[181]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -4782,106 +4782,206 @@ for idx, topic in enumerate(lda.components_):
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Topic  0 json expression regular
-Topic  1 model batch tensorflow
-Topic  2 repository local box
-Topic  3 type int generic
-Topic  4 block transaction dictionary
-Topic  5 function parameter call
-Topic  6 thread task main
-Topic  7 method property visual
-Topic  8 table query record
-Topic  9 version compiler code
-Topic  10 php operator ie
-Topic  11 java exception port
-Topic  12 background iphone animation
-Topic  13 variable state foo
-Topic  14 action activity tab
-Topic  15 service graph web
-Topic  16 document structure insert
-Topic  17 name return get
-Topic  18 request header http
-Topic  19 point algorithm question
-Topic  20 core sample data
-Topic  21 view controller cache
-Topic  22 class method instance
-Topic  23 column row dataframe
-Topic  24 button click icon
-Topic  25 byte copy address
-Topic  26 group like point
-Topic  27 git tag branch
-Topic  28 string store best
-Topic  29 language null like
-Topic  30 io async audio
-Topic  31 change color cell
-Topic  32 xcode swift notification
-Topic  33 difference entity static
-Topic  34 mvc attribute web
-Topic  35 user access certificate
-Topic  36 python module import
-Topic  37 new existing source
-Topic  38 output log mode
-Topic  39 size set setting
-Topic  40 project build dependency
-Topic  41 object pdf section
-Topic  42 file read using
-Topic  43 spring hibernate annotation
-Topic  44 layout height width
-Topic  45 component encoding react
-Topic  46 window system linux
-Topic  47 api token authentication
-Topic  48 bar status navigation
-Topic  49 memory heap laravel
-Topic  50 nt ve work
-Topic  51 framework session cookie
-Topic  52 use would like
-Topic  53 load screen loading
-Topic  54 event jquery scroll
-Topic  55 device enable enabled
-Topic  56 element rail internet
-Topic  57 javascript browser style
-Topic  58 library target shared
-Topic  59 program stack kernel
-Topic  60 script command run
-Topic  61 extension permission programming
-Topic  62 time date format
+<pre>Topic  0 statement switch dictionary
+Topic  1 model domain like
+Topic  2 host machine remote
+Topic  3 type int long
+Topic  4 nt ca work
+Topic  5 jquery insert transaction
+Topic  6 thread queue lock
+Topic  7 property generic delegate
+Topic  8 record relationship postgresql
+Topic  9 version release bean
+Topic  10 failed sample resolve
+Topic  11 spring port configure
+Topic  12 custom annotation uiview
+Topic  13 variable global use
+Topic  14 tab fragment new
+Topic  15 may information bad
+Topic  16 structure processing data
+Topic  17 member bootstrap dynamically
+Topic  18 request mvc application
+Topic  19 point given coordinate
+Topic  20 installed install ubuntu
+Topic  21 run box clear
+Topic  22 class use inheritance
+Topic  23 column plot like
+Topic  24 field click button
+Topic  25 remove graph turn
+Topic  26 row unique length
+Topic  27 swift extension share
+Topic  28 requirement storage system
+Topic  29 language programming disk
+Topic  30 start stop crash
+Topic  31 behind selected mongodb
+Topic  32 exception angular throw
+Topic  33 cache someone explain
+Topic  34 cs include render
+Topic  35 access id email
+Topic  36 module import use
+Topic  37 build building active
+Topic  38 git delete tag
+Topic  39 branch buffer merge
+Topic  40 environment development configuration
+Topic  41 object create like
+Topic  42 line command using
+Topic  43 connection send socket
+Topic  44 appreciated help section
+Topic  45 question answer good
+Topic  46 window application linux
+Topic  47 authentication password user
+Topic  48 screen status excel
+Topic  49 way root proper
+Topic  50 comment calculate would
+Topic  51 framework db boost
+Topic  52 container free public
+Topic  53 camera limit need
+Topic  54 scroll keyboard div
+Topic  55 set font account
+Topic  56 rail ruby concept
+Topic  57 based filter gui
+Topic  58 library shared architecture
+Topic  59 program dynamic run
+Topic  60 script execute regular
+Topic  61 github scala repository
+Topic  62 value get day
 Topic  63 video stream play
-Topic  64 domain layer validation
-Topic  65 control wpf binding
-Topic  66 application resource configuration
-Topic  67 test testing unit
-Topic  68 pattern implementation vector
-Topic  69 database sql mysql
-Topic  70 explain binary use
-Topic  71 array check char
-Topic  72 new reference ui
-Topic  73 list filter like
-Topic  74 android native sdk
-Topic  75 form default django
-Topic  76 map search xml
-Topic  77 loop hash two
-Topic  78 time nt take
-Topic  79 save camera feature
-Topic  80 bit performance time
-Topic  81 package update http
-Topic  82 text character display
-Topic  83 html chrome cs
-Topic  84 server client connection
-Topic  85 image font detect
-Topic  86 path folder directory
-Topic  87 key api private
-Topic  88 example like would
-Topic  89 node item true
-Topic  90 data line space
-Topic  91 code nt question
-Topic  92 app apps location
-Topic  93 error install following
-Topic  94 page content ajax
-Topic  95 url google http
-Topic  96 std template standard
-Topic  97 value field input
-Topic  98 file upload download
-Topic  99 process container child
+Topic  64 compiler compile gcc
+Topic  65 wpf drop xaml
+Topic  66 assembly console application
+Topic  67 hash gem bundle
+Topic  68 header pattern add
+Topic  69 database mysql docker
+Topic  70 expression lambda tutorial
+Topic  71 element contains runtime
+Topic  72 reference copy create
+Topic  73 input take taking
+Topic  74 java application used
+Topic  75 default button constructor
+Topic  76 return result search
+Topic  77 binary tree child
+Topic  78 frame actually nt
+Topic  79 login angularjs backend
+Topic  80 sort expect sorting
+Topic  81 post blog using
+Topic  82 top label bottom
+Topic  83 google map apply
+Topic  84 client server side
+Topic  85 javascript browser website
+Topic  86 path exist force
+Topic  87 web internet application
+Topic  88 iphone simulator mobile
+Topic  89 list item like
+Topic  90 feature space extra
+Topic  91 ve nt like
+Topic  92 android debug sdk
+Topic  93 running mac run
+Topic  94 page site content
+Topic  95 url block condition
+Topic  96 dependency linux npm
+Topic  97 size display scale
+Topic  98 link download file
+Topic  99 process bash shell
+Topic  100 studio visual application
+Topic  101 algorithm count implementation
+Topic  102 activity job batch
+Topic  103 directory main valid
+Topic  104 problem tried config
+Topic  105 project add new
+Topic  106 location cell facebook
+Topic  107 thanks advance help
+Topic  108 user existing new
+Topic  109 store route provider
+Topic  110 back view effect
+Topic  111 package install installation
+Topic  112 test testing unit
+Topic  113 json node using
+Topic  114 api token resource
+Topic  115 chrome certificate firefox
+Topic  116 folder source file
+Topic  117 error following get
+Topic  118 table sql create
+Topic  119 called method sound
+Topic  120 key private public
+Topic  121 string numpy like
+Topic  122 right left area
+Topic  123 output index duplicate
+Topic  124 check log exists
+Topic  125 implement scrolling implementation
+Topic  126 query sql select
+Topic  127 bit generate integer
+Topic  128 component icon react
+Topic  129 call service calling
+Topic  130 push notification dialog
+Topic  131 task complete future
+Topic  132 xml gradle latest
+Topic  133 change color background
+Topic  134 control learning learn
+Topic  135 php operator comparison
+Topic  136 ui sometimes happening
+Topic  137 parameter pas argument
+Topic  138 native manager logging
+Topic  139 static terminal phone
+Topic  140 connect spark extract
+Topic  141 view controller action
+Topic  142 performance advantage using
+Topic  143 memory usage heap
+Topic  144 event callback async
+Topic  145 target platform collection
+Topic  146 loop faster fast
+Topic  147 standard std operation
+Topic  148 application across real
+Topic  149 file using want
+Topic  150 device draw driver
+Topic  151 number state animation
+Topic  152 io app apps
+Topic  153 byte permission entry
+Topic  154 name print vector
+Topic  155 bar navigation title
+Topic  156 python django using
+Topic  157 style normal haskell
+Topic  158 best way practice
+Topic  159 array pointer element
+Topic  160 text editor edit
+Topic  161 interface attribute implementing
+Topic  162 read format base
+Topic  163 last level show
+Topic  164 http use support
+Topic  165 code work following
+Topic  166 form template add
+Topic  167 xcode new updated
+Topic  168 context network layout
+Topic  169 entity save upload
+Topic  170 place doc specify
+Topic  171 repository layer entity
+Topic  172 eclipse plugin maven
+Topic  173 correctly nested setup
+Topic  174 data replace using
+Topic  175 message core apache
+Topic  176 opencv image pixel
+Topic  177 document hibernate join
+Topic  178 update empty second
+Topic  179 convert date null
+Topic  180 difference character encoding
+Topic  181 term parse csv
+Topic  182 true warning false
+Topic  183 address system pdf
+Topic  184 time load every
+Topic  185 mode ie local
+Topic  186 method instance foo
+Topic  187 syntax menu design
+Topic  188 height width constraint
+Topic  189 html option select
+Topic  190 named dll software
+Topic  191 image using want
+Topic  192 stack behavior determine
+Topic  193 word loaded loading
+Topic  194 server sql using
+Topic  195 group equivalent panda
+Topic  196 order sequence element
+Topic  197 response session request
+Topic  198 function like example
+Topic  199 app setting profile
 </pre>
 </div>
 </div>
@@ -4895,7 +4995,7 @@ Topic  99 process container child
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[161]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[185]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -4913,28 +5013,30 @@ Topic  99 process container child
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">index</span> <span class="o">=</span> <span class="mi">4665</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="n">docs</span><span class="o">.</span><span class="n">reduced_body</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">docs</span><span class="o">.</span><span class="n">tags</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;input text: </span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;known tags: </span><span class="si">{</span><span class="n">docs</span><span class="o">.</span><span class="n">tags</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="c1"># lda.transform(cv.transform([text]))[0]</span>
-<span class="n">best_topic_indexes</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="n">text</span><span class="p">]))</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">best_topic_indexes</span><span class="p">)</span>
+<span class="n">best_topic_indexes</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="n">text</span><span class="p">]))</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;lda best topic indexe found: </span><span class="si">{</span><span class="n">best_topic_indexes</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
-<span class="n">best_topics</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">[</span><span class="n">best_topic_indexes</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">best_topics</span><span class="p">[:</span><span class="mi">3</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()[</span><span class="n">topic</span><span class="p">])</span>
+<span class="n">best_topics</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">[</span><span class="n">best_topic_indexes</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;topic</span><span class="se">\&#39;</span><span class="s1">s word indexes </span><span class="si">{</span><span class="n">best_topics</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;predicted tags: </span><span class="si">{</span><span class="p">[</span><span class="n">cv</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()[</span><span class="n">topic</span><span class="p">]</span> <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">best_topics</span><span class="p">[:</span><span class="mi">3</span><span class="p">]]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 <div id="cell-38" class="clipboard-copy-txt">index = 4665
 
 text = docs.reduced_body[index]
-print(text)
-print(docs.tags[index])
+print(f'input text: {text}')
+print(f'known tags: {docs.tags[index]}')
 # lda.transform(cv.transform([text]))[0]
-best_topic_indexes = lda.transform(cv.transform([text])).argsort()[0][::-1][:3]
-print(best_topic_indexes)
+best_topic_indexes = lda.transform(cv.transform([text])).argsort()[0][::-1][0]
+print(f'lda best topic indexe found: {best_topic_indexes}')
 
-best_topics = lda.components_[best_topic_indexes[0]].argsort()[::-3]
-for topic in best_topics[:3]:
-    print(cv.get_feature_names()[topic])</div>
+best_topics = lda.components_[best_topic_indexes].argsort()[::-1]
+print(f'topic\'s word indexes {best_topics[:3]}')
+
+print(f'predicted tags: {[cv.get_feature_names()[topic] for topic in best_topics[:3]]}')</div>
     
         </div>
     </div>
@@ -4954,12 +5056,11 @@ for topic in best_topics[:3]:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>save application setting window form application want achieve simple window form .net application us path reading information path user using option form provide want save path value file later use would one many setting file file would directly application folder understand three option available file custom xml file read .net configuration file value back would like get far possible mean use custom xml file save configuration setting would like see code example c# seen still clear
-[&#39;c#&#39;, &#39;xml&#39;, &#39;winforms&#39;]
-[52 66 42]
-use
-one
-question
+<pre>input text: save application setting window form application want achieve simple window form .net application us path reading information path user using option form provide want save path value file later use would one many setting file file would directly application folder understand three option available file custom xml file read .net configuration file value back would like get far possible mean use custom xml file save configuration setting would like see code example c# seen still clear
+known tags: [&#39;c#&#39;, &#39;xml&#39;, &#39;winforms&#39;]
+lda best topic indexe found: 148
+topic&#39;s word indexes [ 55   6 777]
+predicted tags: [&#39;application&#39;, &#39;across&#39;, &#39;real&#39;]
 </pre>
 </div>
 </div>
