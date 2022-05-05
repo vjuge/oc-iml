@@ -4680,7 +4680,7 @@ print(classification_report(y_true, y_pred, target_names=mlb_b.classes_))</div>
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[180]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[196]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -4697,12 +4697,12 @@ print(classification_report(y_true, y_pred, target_names=mlb_b.classes_))</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">LatentDirichletAllocation</span>
 
-<span class="n">lda</span> <span class="o">=</span> <span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">lda</span> <span class="o">=</span> <span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">bow</span><span class="p">)</span>
 </pre></div>
 <div id="cell-36" class="clipboard-copy-txt">from sklearn.decomposition import LatentDirichletAllocation
 
-lda = LatentDirichletAllocation(n_components=200, random_state=0, n_jobs=-1)
+lda = LatentDirichletAllocation(n_components=1000, random_state=0, n_jobs=-1)
 lda.fit(bow)</div>
     
         </div>
@@ -4719,13 +4719,13 @@ lda.fit(bow)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[180]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[196]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>LatentDirichletAllocation(n_components=200, n_jobs=-1, random_state=0)</pre>
+<pre>LatentDirichletAllocation(n_components=1000, n_jobs=-1, random_state=0)</pre>
 </div>
 
 </div>
@@ -4739,7 +4739,7 @@ lda.fit(bow)</div>
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[181]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[197]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -4754,14 +4754,10 @@ lda.fit(bow)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># lda.components_[0].sort()</span>
-<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span>
-    <span class="c1"># topic.argsort()[:-10 -1:-1]</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span>
     <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">topic</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="o">-</span><span class="mi">3</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 </pre></div>
-<div id="cell-37" class="clipboard-copy-txt"># lda.components_[0].sort()
-for idx, topic in enumerate(lda.components_):
-    # topic.argsort()[:-10 -1:-1]
+<div id="cell-37" class="clipboard-copy-txt">for idx, topic in enumerate(lda.components_):
     print ("Topic ", idx, " ".join(cv.get_feature_names()[i] for i in topic.argsort()[:-3 -1:-1]))</div>
     
         </div>
@@ -4782,206 +4778,1006 @@ for idx, topic in enumerate(lda.components_):
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Topic  0 statement switch dictionary
-Topic  1 model domain like
-Topic  2 host machine remote
-Topic  3 type int long
-Topic  4 nt ca work
-Topic  5 jquery insert transaction
-Topic  6 thread queue lock
-Topic  7 property generic delegate
-Topic  8 record relationship postgresql
-Topic  9 version release bean
-Topic  10 failed sample resolve
-Topic  11 spring port configure
-Topic  12 custom annotation uiview
-Topic  13 variable global use
-Topic  14 tab fragment new
-Topic  15 may information bad
-Topic  16 structure processing data
-Topic  17 member bootstrap dynamically
-Topic  18 request mvc application
-Topic  19 point given coordinate
-Topic  20 installed install ubuntu
-Topic  21 run box clear
-Topic  22 class use inheritance
-Topic  23 column plot like
-Topic  24 field click button
-Topic  25 remove graph turn
-Topic  26 row unique length
-Topic  27 swift extension share
-Topic  28 requirement storage system
-Topic  29 language programming disk
-Topic  30 start stop crash
-Topic  31 behind selected mongodb
-Topic  32 exception angular throw
-Topic  33 cache someone explain
-Topic  34 cs include render
-Topic  35 access id email
-Topic  36 module import use
-Topic  37 build building active
-Topic  38 git delete tag
-Topic  39 branch buffer merge
-Topic  40 environment development configuration
-Topic  41 object create like
-Topic  42 line command using
-Topic  43 connection send socket
-Topic  44 appreciated help section
-Topic  45 question answer good
-Topic  46 window application linux
-Topic  47 authentication password user
-Topic  48 screen status excel
-Topic  49 way root proper
-Topic  50 comment calculate would
-Topic  51 framework db boost
-Topic  52 container free public
-Topic  53 camera limit need
-Topic  54 scroll keyboard div
-Topic  55 set font account
-Topic  56 rail ruby concept
-Topic  57 based filter gui
-Topic  58 library shared architecture
-Topic  59 program dynamic run
-Topic  60 script execute regular
-Topic  61 github scala repository
-Topic  62 value get day
-Topic  63 video stream play
-Topic  64 compiler compile gcc
-Topic  65 wpf drop xaml
-Topic  66 assembly console application
-Topic  67 hash gem bundle
-Topic  68 header pattern add
-Topic  69 database mysql docker
-Topic  70 expression lambda tutorial
-Topic  71 element contains runtime
-Topic  72 reference copy create
-Topic  73 input take taking
-Topic  74 java application used
-Topic  75 default button constructor
-Topic  76 return result search
-Topic  77 binary tree child
-Topic  78 frame actually nt
-Topic  79 login angularjs backend
-Topic  80 sort expect sorting
-Topic  81 post blog using
-Topic  82 top label bottom
-Topic  83 google map apply
-Topic  84 client server side
-Topic  85 javascript browser website
-Topic  86 path exist force
-Topic  87 web internet application
-Topic  88 iphone simulator mobile
-Topic  89 list item like
-Topic  90 feature space extra
-Topic  91 ve nt like
-Topic  92 android debug sdk
-Topic  93 running mac run
-Topic  94 page site content
-Topic  95 url block condition
-Topic  96 dependency linux npm
-Topic  97 size display scale
-Topic  98 link download file
-Topic  99 process bash shell
-Topic  100 studio visual application
-Topic  101 algorithm count implementation
-Topic  102 activity job batch
-Topic  103 directory main valid
-Topic  104 problem tried config
-Topic  105 project add new
-Topic  106 location cell facebook
-Topic  107 thanks advance help
-Topic  108 user existing new
-Topic  109 store route provider
-Topic  110 back view effect
-Topic  111 package install installation
-Topic  112 test testing unit
-Topic  113 json node using
-Topic  114 api token resource
-Topic  115 chrome certificate firefox
-Topic  116 folder source file
-Topic  117 error following get
-Topic  118 table sql create
-Topic  119 called method sound
-Topic  120 key private public
-Topic  121 string numpy like
-Topic  122 right left area
-Topic  123 output index duplicate
-Topic  124 check log exists
-Topic  125 implement scrolling implementation
-Topic  126 query sql select
-Topic  127 bit generate integer
-Topic  128 component icon react
-Topic  129 call service calling
-Topic  130 push notification dialog
-Topic  131 task complete future
-Topic  132 xml gradle latest
-Topic  133 change color background
-Topic  134 control learning learn
-Topic  135 php operator comparison
-Topic  136 ui sometimes happening
-Topic  137 parameter pas argument
-Topic  138 native manager logging
-Topic  139 static terminal phone
-Topic  140 connect spark extract
-Topic  141 view controller action
-Topic  142 performance advantage using
-Topic  143 memory usage heap
-Topic  144 event callback async
-Topic  145 target platform collection
-Topic  146 loop faster fast
-Topic  147 standard std operation
-Topic  148 application across real
-Topic  149 file using want
-Topic  150 device draw driver
-Topic  151 number state animation
-Topic  152 io app apps
-Topic  153 byte permission entry
-Topic  154 name print vector
-Topic  155 bar navigation title
-Topic  156 python django using
-Topic  157 style normal haskell
-Topic  158 best way practice
-Topic  159 array pointer element
-Topic  160 text editor edit
-Topic  161 interface attribute implementing
-Topic  162 read format base
-Topic  163 last level show
-Topic  164 http use support
-Topic  165 code work following
-Topic  166 form template add
-Topic  167 xcode new updated
-Topic  168 context network layout
-Topic  169 entity save upload
-Topic  170 place doc specify
-Topic  171 repository layer entity
-Topic  172 eclipse plugin maven
-Topic  173 correctly nested setup
-Topic  174 data replace using
-Topic  175 message core apache
-Topic  176 opencv image pixel
-Topic  177 document hibernate join
-Topic  178 update empty second
-Topic  179 convert date null
-Topic  180 difference character encoding
-Topic  181 term parse csv
-Topic  182 true warning false
-Topic  183 address system pdf
-Topic  184 time load every
-Topic  185 mode ie local
-Topic  186 method instance foo
-Topic  187 syntax menu design
-Topic  188 height width constraint
-Topic  189 html option select
-Topic  190 named dll software
-Topic  191 image using want
-Topic  192 stack behavior determine
-Topic  193 word loaded loading
-Topic  194 server sql using
-Topic  195 group equivalent panda
-Topic  196 order sequence element
-Topic  197 response session request
-Topic  198 function like example
-Topic  199 app setting profile
+<pre>Topic  0 statement using nt
+Topic  1 div instead like
+Topic  2 target error setting
+Topic  3 almost nt answer
+Topic  4 code including saying
+Topic  5 opencv using code
+Topic  6 task run way
+Topic  7 browser firefox work
+Topic  8 numpy like python
+Topic  9 bean spring created
+Topic  10 php use using
+Topic  11 happens fix problem
+Topic  12 lock code using
+Topic  13 whether changed really
+Topic  14 read reading file
+Topic  15 obvious nt seems
+Topic  16 project option ve
+Topic  17 remove want trying
+Topic  18 avoid like using
+Topic  19 vector way want
+Topic  20 way wrong using
+Topic  21 result get term
+Topic  22 actual really simple
+Topic  23 people program question
+Topic  24 le using problem
+Topic  25 project repository feature
+Topic  26 record disk sqlite
+Topic  27 appreciated would help
+Topic  28 may solution need
+Topic  29 rule installation able
+Topic  30 prevent since still
+Topic  31 buffer data using
+Topic  32 great would work
+Topic  33 design let like
+Topic  34 logic code use
+Topic  35 google using get
+Topic  36 module use using
+Topic  37 information regarding could
+Topic  38 range appropriate would
+Topic  39 protocol http use
+Topic  40 safe thread use
+Topic  41 link http want
+Topic  42 import file error
+Topic  43 client server need
+Topic  44 scale would like
+Topic  45 used set nt
+Topic  46 second first two
+Topic  47 understanding correct access
+Topic  48 valid answer may
+Topic  49 batch tried way
+Topic  50 task system ve
+Topic  51 platform would provide
+Topic  52 somehow ll time
+Topic  53 port one nt
+Topic  54 camera learn get
+Topic  55 microsoft nt using
+Topic  56 longer seems since
+Topic  57 django tried ve
+Topic  58 simulator io xcode
+Topic  59 run running code
+Topic  60 simple python text
+Topic  61 moment like need
+Topic  62 character would need
+Topic  63 wondering way would
+Topic  64 security without see
+Topic  65 menu option want
+Topic  66 client make need
+Topic  67 download file using
+Topic  68 pattern use example
+Topic  69 db get need
+Topic  70 like could way
+Topic  71 model data using
+Topic  72 ui make need
+Topic  73 rail gem ve
+Topic  74 specifically inheritance example
+Topic  75 happening problem work
+Topic  76 install pip using
+Topic  77 different two fact
+Topic  78 error problem ii
+Topic  79 user want able
+Topic  80 scroll nt scrolling
+Topic  81 flutter error trying
+Topic  82 cs like possible
+Topic  83 column data want
+Topic  84 game would nt
+Topic  85 implementing implement way
+Topic  86 configuration file error
+Topic  87 exception code throw
+Topic  88 one got boost
+Topic  89 encryption data code
+Topic  90 feature use new
+Topic  91 nt know good
+Topic  92 count number using
+Topic  93 part stuff basically
+Topic  94 installing install even
+Topic  95 url http get
+Topic  96 efficient downloaded way
+Topic  97 date supported using
+Topic  98 current get need
+Topic  99 shell work get
+Topic  100 want created set
+Topic  101 explain someone please
+Topic  102 purpose case use
+Topic  103 question going found
+Topic  104 npm install error
+Topic  105 project maven use
+Topic  106 id facebook get
+Topic  107 math code value
+Topic  108 reference want website
+Topic  109 minute every time
+Topic  110 writing using write
+Topic  111 yes case nt
+Topic  112 effect like tried
+Topic  113 day year get
+Topic  114 get use way
+Topic  115 firefox chrome fine
+Topic  116 edit able etc
+Topic  117 environment running following
+Topic  118 exist happen might
+Topic  119 also still answer
+Topic  120 delete new would
+Topic  121 switch case nt
+Topic  122 mvvm using code
+Topic  123 plot bootstrap like
+Topic  124 appears way used
+Topic  125 symbol make used
+Topic  126 migration database change
+Topic  127 may code question
+Topic  128 go would way
+Topic  129 app file one
+Topic  130 passing another seems
+Topic  131 socket method call
+Topic  132 api using successfully
+Topic  133 http edit add
+Topic  134 matplotlib call since
+Topic  135 useful haskell example
+Topic  136 code loop callback
+Topic  137 parent child get
+Topic  138 resource following good
+Topic  139 certain like nt
+Topic  140 warning error get
+Topic  141 doc used done
+Topic  142 mind would like
+Topic  143 free kernel question
+Topic  144 xcode sdk project
+Topic  145 compiler make question
+Topic  146 faster code time
+Topic  147 short seems particular
+Topic  148 thing update ve
+Topic  149 solution data row
+Topic  150 mobile also like
+Topic  151 code without tried
+Topic  152 background seems working
+Topic  153 program run work
+Topic  154 data file byte
+Topic  155 expect work going
+Topic  156 keyboard like nt
+Topic  157 excel file using
+Topic  158 easy one rather
+Topic  159 array following would
+Topic  160 external without need
+Topic  161 saying code way
+Topic  162 row specific one
+Topic  163 along far one
+Topic  164 chrome http ie
+Topic  165 instruction code first
+Topic  166 back work going
+Topic  167 aware also however
+Topic  168 limit multithreading used
+Topic  169 creates file including
+Topic  170 code exactly note
+Topic  171 linq combination like
+Topic  172 copy file another
+Topic  173 shown however code
+Topic  174 public using use
+Topic  175 using error edit
+Topic  176 algorithm one find
+Topic  177 document hand like
+Topic  178 heap ve use
+Topic  179 http request using
+Topic  180 best practice way
+Topic  181 modify similar need
+Topic  182 frame like code
+Topic  183 std use using
+Topic  184 requirement possible using
+Topic  185 index get example
+Topic  186 csv data example
+Topic  187 constructor nt call
+Topic  188 inside outside scope
+Topic  189 desktop application quite
+Topic  190 dll nt code
+Topic  191 iphone app want
+Topic  192 length concept understand
+Topic  193 ie work nt
+Topic  194 somewhere see actually
+Topic  195 reference say found
+Topic  196 require answer may
+Topic  197 native dom code
+Topic  198 basic know really
+Topic  199 sample bug code
+Topic  200 usually feel used
+Topic  201 data problem using
+Topic  202 eclipse work nt
+Topic  203 must know something
+Topic  204 assume would nt
+Topic  205 question answer next
+Topic  206 connect socket server
+Topic  207 consider following case
+Topic  208 appear get problem
+Topic  209 stack question know
+Topic  210 service using call
+Topic  211 answer draw make
+Topic  212 nt take ve
+Topic  213 element way find
+Topic  214 attempt however error
+Topic  215 dependency included example
+Topic  216 exists already given
+Topic  217 trouble ve getting
+Topic  218 function call code
+Topic  219 block code use
+Topic  220 information one point
+Topic  221 tested currently correct
+Topic  222 char know edit
+Topic  223 xml file using
+Topic  224 common seems code
+Topic  225 architecture ios work
+Topic  226 attribute nt like
+Topic  227 appreciate really ve
+Topic  228 address get possible
+Topic  229 github project nt
+Topic  230 macos one using
+Topic  231 microsoft server sql
+Topic  232 top like see
+Topic  233 final different actual
+Topic  234 apple couple fix
+Topic  235 react using use
+Topic  236 fails work error
+Topic  237 blog post use
+Topic  238 console error see
+Topic  239 title question need
+Topic  240 sql server using
+Topic  241 error nt page
+Topic  242 determine way using
+Topic  243 instance page login
+Topic  244 data case using
+Topic  245 bind want way
+Topic  246 want example need
+Topic  247 window way using
+Topic  248 required following error
+Topic  249 check whether need
+Topic  250 scenario question would
+Topic  251 domain object class
+Topic  252 register used code
+Topic  253 believe whole get
+Topic  254 true read correct
+Topic  255 file would register
+Topic  256 static nt make
+Topic  257 node using one
+Topic  258 datetime time get
+Topic  259 completely work nt
+Topic  260 made question know
+Topic  261 lambda code using
+Topic  262 custom code nt
+Topic  263 uiview everything nothing
+Topic  264 cause said problem
+Topic  265 token request access
+Topic  266 binding data show
+Topic  267 next put take
+Topic  268 matter amount always
+Topic  269 site one different
+Topic  270 get code nt
+Topic  271 ipad io see
+Topic  272 key way nt
+Topic  273 tab code different
+Topic  274 select route like
+Topic  275 server user access
+Topic  276 image file code
+Topic  277 exact get exactly
+Topic  278 postgresql error used
+Topic  279 font use different
+Topic  280 microsoft might code
+Topic  281 label like code
+Topic  282 implement implemented use
+Topic  283 correct system far
+Topic  284 direction right point
+Topic  285 like nt use
+Topic  286 file binary general
+Topic  287 article question answer
+Topic  288 value could please
+Topic  289 complex simple need
+Topic  290 two example data
+Topic  291 nt wo work
+Topic  292 installed install get
+Topic  293 data example would
+Topic  294 api call use
+Topic  295 nt get work
+Topic  296 dialog show problem
+Topic  297 idea ve wrong
+Topic  298 provider use sure
+Topic  299 location update even
+Topic  300 hash time come
+Topic  301 add starting code
+Topic  302 internet nt use
+Topic  303 prefer would case
+Topic  304 pointer would like
+Topic  305 existing new add
+Topic  306 core ve find
+Topic  307 whenever try code
+Topic  308 file read data
+Topic  309 line way file
+Topic  310 add want serialization
+Topic  311 syntax using like
+Topic  312 library using use
+Topic  313 generated since automatically
+Topic  314 device work nt
+Topic  315 access possible another
+Topic  316 supposed work get
+Topic  317 procedure stored using
+Topic  318 number random example
+Topic  319 jar executable file
+Topic  320 file upload using
+Topic  321 slow time take
+Topic  322 manage like really
+Topic  323 asynchronous one use
+Topic  324 source code eclipse
+Topic  325 call calling code
+Topic  326 manually bundle every
+Topic  327 field like using
+Topic  328 try solution want
+Topic  329 bit code use
+Topic  330 debugging debug code
+Topic  331 use number environment
+Topic  332 enable disable still
+Topic  333 use format currently
+Topic  334 cache caching used
+Topic  335 overflow stack question
+Topic  336 git local file
+Topic  337 first working would
+Topic  338 software come etc
+Topic  339 result type nt
+Topic  340 nt find fine
+Topic  341 space take two
+Topic  342 pdf file using
+Topic  343 advance thanks help
+Topic  344 resource nice get
+Topic  345 defined define following
+Topic  346 called never first
+Topic  347 time ve code
+Topic  348 spring boot using
+Topic  349 view like get
+Topic  350 code javascript value
+Topic  351 use edit see
+Topic  352 wpf like application
+Topic  353 enabled fact etc
+Topic  354 extract file using
+Topic  355 call thing model
+Topic  356 online found find
+Topic  357 tried correctly using
+Topic  358 vector would using
+Topic  359 file get php
+Topic  360 previous question way
+Topic  361 schema using update
+Topic  362 audio using question
+Topic  363 data core host
+Topic  364 added code using
+Topic  365 selenium using trying
+Topic  366 would nt like
+Topic  367 button click want
+Topic  368 structure data use
+Topic  369 fragment inside using
+Topic  370 level would way
+Topic  371 general point concept
+Topic  372 regex like find
+Topic  373 build project file
+Topic  374 save mac file
+Topic  375 file want one
+Topic  376 file also using
+Topic  377 given file would
+Topic  378 https another error
+Topic  379 memory control browser
+Topic  380 tutorial nt know
+Topic  381 function would create
+Topic  382 private like nt
+Topic  383 dictionary retrieve way
+Topic  384 handler nt want
+Topic  385 perhaps something seem
+Topic  386 general nt much
+Topic  387 relevant using create
+Topic  388 cpu system show
+Topic  389 value method use
+Topic  390 code nt way
+Topic  391 one therefore would
+Topic  392 turn simple know
+Topic  393 properly example lot
+Topic  394 proper way like
+Topic  395 directory file find
+Topic  396 going call one
+Topic  397 using source ve
+Topic  398 core data use
+Topic  399 uikit use ve
+Topic  400 certificate file ca
+Topic  401 object nt one
+Topic  402 audio api data
+Topic  403 person uiview uitableview
+Topic  404 implementation real different
+Topic  405 research answer question
+Topic  406 data nt program
+Topic  407 stackoverflow working code
+Topic  408 site also server
+Topic  409 proxy server work
+Topic  410 bit might use
+Topic  411 parameter microsoft know
+Topic  412 layout make different
+Topic  413 div see work
+Topic  414 easier making use
+Topic  415 ii error running
+Topic  416 session created need
+Topic  417 python quite question
+Topic  418 test run nt
+Topic  419 mvc using project
+Topic  420 sometimes executed problem
+Topic  421 key using certificate
+Topic  422 last showing show
+Topic  423 project version file
+Topic  424 authentication security problem
+Topic  425 helpful would nt
+Topic  426 article would may
+Topic  427 apps app know
+Topic  428 image using want
+Topic  429 future use lot
+Topic  430 comparison find one
+Topic  431 development easily could
+Topic  432 update version another
+Topic  433 http google reference
+Topic  434 would like nt
+Topic  435 redirect http work
+Topic  436 app using nt
+Topic  437 property use following
+Topic  438 position normal area
+Topic  439 hit place would
+Topic  440 book reading way
+Topic  441 build image docker
+Topic  442 repository session login
+Topic  443 list like would
+Topic  444 javascript using way
+Topic  445 based better used
+Topic  446 controller like would
+Topic  447 manager different use
+Topic  448 processing requires similar
+Topic  449 boost using use
+Topic  450 screen make want
+Topic  451 within like code
+Topic  452 delegate need nt
+Topic  453 mean operator exactly
+Topic  454 code result edit
+Topic  455 version nt handler
+Topic  456 empty reason always
+Topic  457 solution call node
+Topic  458 error getting tried
+Topic  459 creating created trying
+Topic  460 item one get
+Topic  461 tomcat running application
+Topic  462 optimization call make
+Topic  463 file encoding problem
+Topic  464 others say ve
+Topic  465 account create need
+Topic  466 video using nt
+Topic  467 store written used
+Topic  468 experience development good
+Topic  469 row like want
+Topic  470 followed ve tried
+Topic  471 log flag draw
+Topic  472 many thing would
+Topic  473 ii load express
+Topic  474 format configuration setting
+Topic  475 render way like
+Topic  476 without instruction run
+Topic  477 match using new
+Topic  478 adding add nt
+Topic  479 cookie request set
+Topic  480 header nt get
+Topic  481 cocoa seems thing
+Topic  482 related run update
+Topic  483 interface definition implement
+Topic  484 content something allow
+Topic  485 child nt make
+Topic  486 follow nt anyway
+Topic  487 handling way handle
+Topic  488 angularjs using get
+Topic  489 solution problem find
+Topic  490 change changing want
+Topic  491 related created using
+Topic  492 safari work browser
+Topic  493 text nt want
+Topic  494 example lot question
+Topic  495 anybody know help
+Topic  496 folder file put
+Topic  497 re note thing
+Topic  498 memory case much
+Topic  499 detail see error
+Topic  500 color like change
+Topic  501 networking like approach
+Topic  502 value get case
+Topic  503 perform would use
+Topic  504 entry point edit
+Topic  505 type like nt
+Topic  506 token browser would
+Topic  507 orm using looking
+Topic  508 push suppose want
+Topic  509 duplicate question possible
+Topic  510 return returning call
+Topic  511 ubuntu install work
+Topic  512 base using still
+Topic  513 full file could
+Topic  514 pull nt ve
+Topic  515 create using sure
+Topic  516 automatically would use
+Topic  517 model look like
+Topic  518 play code work
+Topic  519 database data would
+Topic  520 understanding understand nt
+Topic  521 way somehow directly
+Topic  522 stop working ve
+Topic  523 standard int question
+Topic  524 serialization nt ve
+Topic  525 sqlite must one
+Topic  526 control use nt
+Topic  527 branch working new
+Topic  528 validation error like
+Topic  529 authentication use using
+Topic  530 configure use http
+Topic  531 mode using work
+Topic  532 message must every
+Topic  533 single code another
+Topic  534 style unique way
+Topic  535 ve section configuration
+Topic  536 gradle report using
+Topic  537 sql transaction connection
+Topic  538 foo parsing like
+Topic  539 testing logging code
+Topic  540 returned call however
+Topic  541 guess nt still
+Topic  542 keep nt yet
+Topic  543 sending sent using
+Topic  544 checked throw benefit
+Topic  545 engine use using
+Topic  546 change version make
+Topic  547 control update make
+Topic  548 typescript code using
+Topic  549 host use would
+Topic  550 deal way seems
+Topic  551 network get using
+Topic  552 response request get
+Topic  553 noticed ve also
+Topic  554 separate seem answer
+Topic  555 path file get
+Topic  556 global one need
+Topic  557 info also question
+Topic  558 fast think pretty
+Topic  559 stored data etc
+Topic  560 condition two example
+Topic  561 framework use project
+Topic  562 android using code
+Topic  563 release version way
+Topic  564 null get code
+Topic  565 named resolve like
+Topic  566 opencv native information
+Topic  567 function case would
+Topic  568 example learn understand
+Topic  569 constraint nt correctly
+Topic  570 extension file possible
+Topic  571 large say nt
+Topic  572 long time take
+Topic  573 finding far etc
+Topic  574 contain file first
+Topic  575 java whether find
+Topic  576 passed one always
+Topic  577 concurrency using would
+Topic  578 comment visible like
+Topic  579 sense make produce
+Topic  580 annotation using use
+Topic  581 scrolling scroll work
+Topic  582 token one post
+Topic  583 layer network use
+Topic  584 output following example
+Topic  585 ok look think
+Topic  586 particular using following
+Topic  587 buffer time performance
+Topic  588 break like look
+Topic  589 issue could get
+Topic  590 data get would
+Topic  591 asking question like
+Topic  592 variable use like
+Topic  593 graph using example
+Topic  594 side note one
+Topic  595 notification app user
+Topic  596 height get set
+Topic  597 cell tried code
+Topic  598 jquery using work
+Topic  599 close behind code
+Topic  600 sort thing like
+Topic  601 correctly ve tried
+Topic  602 virtual create could
+Topic  603 guide deploy nt
+Topic  604 firebase developing using
+Topic  605 root tried without
+Topic  606 order relationship one
+Topic  607 size know set
+Topic  608 computer nt even
+Topic  609 call would need
+Topic  610 include file code
+Topic  611 machine running nt
+Topic  612 like need request
+Topic  613 via also currently
+Topic  614 open new found
+Topic  615 drop like work
+Topic  616 special every used
+Topic  617 repository one using
+Topic  618 section data specific
+Topic  619 sorting sort one
+Topic  620 remote server using
+Topic  621 detect way able
+Topic  622 time every get
+Topic  623 issue seems fix
+Topic  624 version use different
+Topic  625 nt take tag
+Topic  626 tell one push
+Topic  627 collection must two
+Topic  628 socket although request
+Topic  629 form using want
+Topic  630 profile using find
+Topic  631 string like way
+Topic  632 backend like would
+Topic  633 generic nt like
+Topic  634 allowed resource code
+Topic  635 template use way
+Topic  636 laravel make ve
+Topic  637 scala question nt
+Topic  638 debug loaded code
+Topic  639 matrix scipy using
+Topic  640 step first make
+Topic  641 io resource find
+Topic  642 unit code test
+Topic  643 tsql data use
+Topic  644 additional question every
+Topic  645 force use way
+Topic  646 handle need way
+Topic  647 assembly could one
+Topic  648 view one project
+Topic  649 support apache use
+Topic  650 suggested tried ve
+Topic  651 nt work re
+Topic  652 animation like nt
+Topic  653 process running time
+Topic  654 gui want time
+Topic  655 work problem provider
+Topic  656 except default instead
+Topic  657 calculate two way
+Topic  658 storage use user
+Topic  659 wanted know using
+Topic  660 connection possible application
+Topic  661 tensorflow work trying
+Topic  662 point several tree
+Topic  663 password using user
+Topic  664 java total code
+Topic  665 action equivalent using
+Topic  666 query join like
+Topic  667 oop git branch
+Topic  668 choice use would
+Topic  669 probably one different
+Topic  670 bundle nt would
+Topic  671 taking example note
+Topic  672 find answer swift
+Topic  673 little work bit
+Topic  674 available use using
+Topic  675 encoding unicode correctly
+Topic  676 alternative like use
+Topic  677 left right active
+Topic  678 could edit see
+Topic  679 world question nt
+Topic  680 async call use
+Topic  681 chrome browser way
+Topic  682 kind different seems
+Topic  683 merge displayed two
+Topic  684 ie constant whether
+Topic  685 rather example ve
+Topic  686 fixed still issue
+Topic  687 necessary would question
+Topic  688 try finally problem
+Topic  689 status navigation like
+Topic  690 setting also bar
+Topic  691 according unix answer
+Topic  692 show complete need
+Topic  693 resource would case
+Topic  694 code get behavior
+Topic  695 nt would say
+Topic  696 provides data use
+Topic  697 obviously problem probably
+Topic  698 domain different use
+Topic  699 binary using get
+Topic  700 gcc code use
+Topic  701 seen ve example
+Topic  702 operation may question
+Topic  703 replace one another
+Topic  704 column data new
+Topic  705 language like would
+Topic  706 panda data using
+Topic  707 thinking would think
+Topic  708 important first reason
+Topic  709 object like use
+Topic  710 must nt java
+Topic  711 difference two one
+Topic  712 instance created want
+Topic  713 compare two different
+Topic  714 studio visual project
+Topic  715 message error using
+Topic  716 returning better nt
+Topic  717 hour time every
+Topic  718 main problem one
+Topic  719 searching use way
+Topic  720 user way would
+Topic  721 work way need
+Topic  722 none several working
+Topic  723 new old since
+Topic  724 bottom see problem
+Topic  725 source build code
+Topic  726 active connection every
+Topic  727 put etc also
+Topic  728 cell problem one
+Topic  729 dynamic latest version
+Topic  730 double code two
+Topic  731 similar really something
+Topic  732 original problem nt
+Topic  733 false use always
+Topic  734 suggestion nt got
+Topic  735 domain person rule
+Topic  736 expected work nt
+Topic  737 answer work would
+Topic  738 usage use time
+Topic  739 site base good
+Topic  740 rest use example
+Topic  741 would also store
+Topic  742 unable explanation ve
+Topic  743 end would done
+Topic  744 scrolling content bottom
+Topic  745 data batch would
+Topic  746 etc using like
+Topic  747 performance using lot
+Topic  748 mentioned like error
+Topic  749 containing contains find
+Topic  750 docker container running
+Topic  751 reason use one
+Topic  752 specified specific wrong
+Topic  753 component using like
+Topic  754 touch code specific
+Topic  755 loop nt code
+Topic  756 achieve want like
+Topic  757 pixel way one
+Topic  758 yet far extract
+Topic  759 ran error code
+Topic  760 pro use one
+Topic  761 using complete know
+Topic  762 winforms reactjs application
+Topic  763 always way ssl
+Topic  764 flag exactly make
+Topic  765 phone problem need
+Topic  766 icon nt inside
+Topic  767 nt also local
+Topic  768 interested somehow also
+Topic  769 nt ve set
+Topic  770 language would way
+Topic  771 byte code nt
+Topic  772 editor use like
+Topic  773 permission user get
+Topic  774 needed using able
+Topic  775 token authentication using
+Topic  776 linux execute like
+Topic  777 product may different
+Topic  778 pretty code good
+Topic  779 follows look like
+Topic  780 ajax call request
+Topic  781 ssl http using
+Topic  782 angular using work
+Topic  783 need socket two
+Topic  784 queue work nt
+Topic  785 number new etc
+Topic  786 hibernate jpa using
+Topic  787 box mongodb using
+Topic  788 missing something anything
+Topic  789 auto new possible
+Topic  790 file add nt
+Topic  791 clear scroll inside
+Topic  792 global tree action
+Topic  793 decided question see
+Topic  794 tool use nt
+Topic  795 width piece height
+Topic  796 tree success without
+Topic  797 course would like
+Topic  798 map way want
+Topic  799 mysql using nt
+Topic  800 thus given must
+Topic  801 state idea call
+Topic  802 extra live way
+Topic  803 swift code using
+Topic  804 give could table
+Topic  805 apply use would
+Topic  806 installed package later
+Topic  807 application us want
+Topic  808 across separate come
+Topic  809 often without lot
+Topic  810 else something need
+Topic  811 thing would one
+Topic  812 default setting set
+Topic  813 route read anything
+Topic  814 dynamically created create
+Topic  815 receive problem case
+Topic  816 integer number nt
+Topic  817 content however file
+Topic  818 looked various ve
+Topic  819 dataframe panda like
+Topic  820 mb much take
+Topic  821 built way simply
+Topic  822 code computer like
+Topic  823 view problem apps
+Topic  824 answer database would
+Topic  825 removed correctly since
+Topic  826 context put use
+Topic  827 solve problem simple
+Topic  828 xaml like would
+Topic  829 option put question
+Topic  830 developer version rather
+Topic  831 script run way
+Topic  832 move functionality nt
+Topic  833 camera take hope
+Topic  834 advice could looking
+Topic  835 project setting website
+Topic  836 big need whole
+Topic  837 nt would without
+Topic  838 entity code data
+Topic  839 figure nt ca
+Topic  840 share would please
+Topic  841 member case example
+Topic  842 thing ve something
+Topic  843 started via see
+Topic  844 port one get
+Topic  845 fit nt something
+Topic  846 system one may
+Topic  847 event nt get
+Topic  848 behavior even well
+Topic  849 plugin know find
+Topic  850 website would idea
+Topic  851 load loading without
+Topic  852 approach better best
+Topic  853 print code using
+Topic  854 picture general always
+Topic  855 insert update using
+Topic  856 pas want work
+Topic  857 use point using
+Topic  858 set however correct
+Topic  859 code using library
+Topic  860 asked suggest answer
+Topic  861 django using get
+Topic  862 sound like nt
+Topic  863 specify using nt
+Topic  864 confused use used
+Topic  865 hard find need
+Topic  866 allows looking use
+Topic  867 filter using like
+Topic  868 small project currently
+Topic  869 like get found
+Topic  870 layer nt using
+Topic  871 appropriate know want
+Topic  872 name get nt
+Topic  873 per one want
+Topic  874 expression regular nt
+Topic  875 container use also
+Topic  876 managed etc whole
+Topic  877 documentation nt seem
+Topic  878 draw two point
+Topic  879 data excel solution
+Topic  880 relationship input would
+Topic  881 send need data
+Topic  882 section example code
+Topic  883 key use data
+Topic  884 topic question answer
+Topic  885 contains runtime code
+Topic  886 nested trying like
+Topic  887 javascript token cookie
+Topic  888 setup config file
+Topic  889 learning use understand
+Topic  890 terminal run work
+Topic  891 server code send
+Topic  892 bash file using
+Topic  893 fine work nothing
+Topic  894 callback code like
+Topic  895 class way want
+Topic  896 login nt new
+Topic  897 quite able problem
+Topic  898 wrong task version
+Topic  899 shared library used
+Topic  900 option quite ll
+Topic  901 bar like make
+Topic  902 selected get show
+Topic  903 activity android want
+Topic  904 transaction use make
+Topic  905 though would like
+Topic  906 view controller another
+Topic  907 table like data
+Topic  908 multiple one single
+Topic  909 ie work make
+Topic  910 sequence like would
+Topic  911 new code time
+Topic  912 python use code
+Topic  913 change want answer
+Topic  914 post data get
+Topic  915 recently use least
+Topic  916 bad nt ca
+Topic  917 model parameter like
+Topic  918 choose one use
+Topic  919 together use two
+Topic  920 failed error spark
+Topic  921 web time application
+Topic  922 described question nt
+Topic  923 want trying good
+Topic  924 group role like
+Topic  925 parse found ve
+Topic  926 display want able
+Topic  927 authentication nt get
+Topic  928 especially correct like
+Topic  929 provided provide given
+Topic  930 start find would
+Topic  931 connection working update
+Topic  932 effect fixed error
+Topic  933 stream use using
+Topic  934 would one example
+Topic  935 stuck get trying
+Topic  936 compiled code write
+Topic  937 programming code know
+Topic  938 method use using
+Topic  939 cache data even
+Topic  940 initial code thought
+Topic  941 crash app problem
+Topic  942 update updated still
+Topic  943 provide seems however
+Topic  944 mention nt answer
+Topic  945 nt engine android
+Topic  946 three present different
+Topic  947 transaction new connection
+Topic  948 convert way want
+Topic  949 command file run
+Topic  950 page nt way
+Topic  951 express thing ve
+Topic  952 speed goal since
+Topic  953 situation use question
+Topic  954 configuration ve data
+Topic  955 compile error code
+Topic  956 package install using
+Topic  957 due code nt
+Topic  958 thread question one
+Topic  959 production development use
+Topic  960 complete nt work
+Topic  961 bit exception stack
+Topic  962 unfortunately project changed
+Topic  963 point coordinate nt
+Topic  964 execution time code
+Topic  965 search find result
+Topic  966 allow ask nt
+Topic  967 database application heap
+Topic  968 worked fine get
+Topic  969 either entire would
+Topic  970 csv file trying
+Topic  971 using security whether
+Topic  972 building seems right
+Topic  973 stl standard nt
+Topic  974 utf encoding file
+Topic  975 install tried error
+Topic  976 code anything work
+Topic  977 web might via
+Topic  978 argument take nt
+Topic  979 generate way file
+Topic  980 around way nt
+Topic  981 tag one like
+Topic  982 job would want
+Topic  983 html code using
+Topic  984 server running need
+Topic  985 advantage ever use
+Topic  986 mentioned however first
+Topic  987 input take would
+Topic  988 nt make control
+Topic  989 word using well
+Topic  990 email using code
+Topic  991 seems event though
+Topic  992 maybe got already
+Topic  993 ll using correctly
+Topic  994 thank get trying
+Topic  995 write directly complete
+Topic  996 ruby rail like
+Topic  997 driver username used
+Topic  998 upload picture using
+Topic  999 json data using
 </pre>
 </div>
 </div>
@@ -4991,11 +5787,11 @@ Topic  199 app setting profile
 </div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[185]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[198]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -5010,33 +5806,70 @@ Topic  199 app setting profile
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">index</span> <span class="o">=</span> <span class="mi">4665</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">predict_lda</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">best_topic_indexes</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="n">text</span><span class="p">]))</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;lda best topic index found: </span><span class="si">{</span><span class="n">best_topic_indexes</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">best_topics</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">[</span><span class="n">best_topic_indexes</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;topic</span><span class="se">\&#39;</span><span class="s1">s word indexes </span><span class="si">{</span><span class="n">best_topics</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="p">[</span><span class="n">cv</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()[</span><span class="n">topic</span><span class="p">]</span> <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">best_topics</span><span class="p">[:</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="c1"># print(f&#39;predicted tag: {ret}&#39;)</span>
+    <span class="k">return</span> <span class="n">ret</span>
+</pre></div>
+<div id="cell-38" class="clipboard-copy-txt">def predict_lda(text):
+    best_topic_indexes = lda.transform(cv.transform([text])).argsort()[0][::-1][0]
+    print(f'lda best topic index found: {best_topic_indexes}')
+    best_topics = lda.components_[best_topic_indexes].argsort()[::-1]
+    print(f'topic\'s word indexes {best_topics[:1]}')
+    ret = [cv.get_feature_names()[topic] for topic in best_topics[:1]]
+    # print(f'predicted tag: {ret}')
+    return ret</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[211]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-39">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># some indexes that work, otherwise most of the time predicted tag is wrong</span>
+<span class="c1"># index = 7894</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">1250</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="n">docs</span><span class="o">.</span><span class="n">reduced_body</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;input text: </span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;known tags: </span><span class="si">{</span><span class="n">docs</span><span class="o">.</span><span class="n">tags</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="c1"># lda.transform(cv.transform([text]))[0]</span>
-<span class="n">best_topic_indexes</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="n">text</span><span class="p">]))</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;lda best topic indexe found: </span><span class="si">{</span><span class="n">best_topic_indexes</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
-<span class="n">best_topics</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">[</span><span class="n">best_topic_indexes</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;topic</span><span class="se">\&#39;</span><span class="s1">s word indexes </span><span class="si">{</span><span class="n">best_topics</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;predicted tags: </span><span class="si">{</span><span class="p">[</span><span class="n">cv</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()[</span><span class="n">topic</span><span class="p">]</span> <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">best_topics</span><span class="p">[:</span><span class="mi">3</span><span class="p">]]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">predict_lda</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
-<div id="cell-38" class="clipboard-copy-txt">index = 4665
+<div id="cell-39" class="clipboard-copy-txt"># some indexes that work, otherwise most of the time predicted tag is wrong
+# index = 7894
+index = 1250
 
 text = docs.reduced_body[index]
 print(f'input text: {text}')
 print(f'known tags: {docs.tags[index]}')
-# lda.transform(cv.transform([text]))[0]
-best_topic_indexes = lda.transform(cv.transform([text])).argsort()[0][::-1][0]
-print(f'lda best topic indexe found: {best_topic_indexes}')
 
-best_topics = lda.components_[best_topic_indexes].argsort()[::-1]
-print(f'topic\'s word indexes {best_topics[:3]}')
-
-print(f'predicted tags: {[cv.get_feature_names()[topic] for topic in best_topics[:3]]}')</div>
+predict_lda(text)
+</div>
     
         </div>
     </div>
@@ -5056,13 +5889,26 @@ print(f'predicted tags: {[cv.get_feature_names()[topic] for topic in best_topics
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>input text: save application setting window form application want achieve simple window form .net application us path reading information path user using option form provide want save path value file later use would one many setting file file would directly application folder understand three option available file custom xml file read .net configuration file value back would like get far possible mean use custom xml file save configuration setting would like see code example c# seen still clear
-known tags: [&#39;c#&#39;, &#39;xml&#39;, &#39;winforms&#39;]
-lda best topic indexe found: 148
-topic&#39;s word indexes [ 55   6 777]
-predicted tags: [&#39;application&#39;, &#39;across&#39;, &#39;real&#39;]
+<pre>input text: bit x machine code like first byte x disk file using suggestion linux file
+known tags: [&#39;linux&#39;, &#39;assembly&#39;, &#39;x86&#39;]
+lda best topic index found: 776
+topic&#39;s word indexes [552]
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[211]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;linux&#39;]</pre>
+</div>
+
 </div>
 
 </div>
@@ -5084,7 +5930,7 @@ predicted tags: [&#39;application&#39;, &#39;across&#39;, &#39;real&#39;]
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-39">
+            <clipboard-copy for="cell-40">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5110,7 +5956,7 @@ predicted tags: [&#39;application&#39;, &#39;across&#39;, &#39;real&#39;]
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vocabulary size: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">w2v_words</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Word2Vec trained&quot;</span><span class="p">)</span>
 </pre></div>
-<div id="cell-39" class="clipboard-copy-txt"># snippet taken from sample notebook
+<div id="cell-40" class="clipboard-copy-txt"># snippet taken from sample notebook
 import gensim
 import multiprocessing
 from gensim.models import Word2Vec
@@ -5165,7 +6011,7 @@ Word2Vec trained
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-40">
+            <clipboard-copy for="cell-41">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5183,7 +6029,7 @@ Word2Vec trained
 <span class="c1"># model.wv.index_to_key</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vocabulary size: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">index_to_key</span><span class="p">))</span>
 </pre></div>
-<div id="cell-40" class="clipboard-copy-txt"># training another model, will give slightly different results
+<div id="cell-41" class="clipboard-copy-txt"># training another model, will give slightly different results
 
 model = Word2Vec(sentences, min_count=1, vector_size=200, workers=multiprocessing.cpu_count())
 # model.build_vocab(sentences)
@@ -5228,7 +6074,7 @@ print("Vocabulary size: %i" % len(model.wv.index_to_key))</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-41">
+            <clipboard-copy for="cell-42">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5246,7 +6092,7 @@ print("Vocabulary size: %i" % len(model.wv.index_to_key))</div>
 <span class="n">w2v_model</span><span class="o">.</span><span class="n">wv</span><span class="p">[</span><span class="n">guess</span><span class="p">]</span>
 <span class="n">w2v_model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span>
 </pre></div>
-<div id="cell-41" class="clipboard-copy-txt"># guess close words
+<div id="cell-42" class="clipboard-copy-txt"># guess close words
 len(model.wv.index_to_key)
 guess = 'java'
 model.wv[guess]
@@ -5447,7 +6293,7 @@ w2v_model.wv.most_similar(guess)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-42">
+            <clipboard-copy for="cell-43">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5461,7 +6307,7 @@ w2v_model.wv.most_similar(guess)</div>
     <span class="c1"># pickle.dump(w2v_model, v)</span>
     <span class="n">w2v_model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
-<div id="cell-42" class="clipboard-copy-txt">with open('w2v_model', 'wb') as v :
+<div id="cell-43" class="clipboard-copy-txt">with open('w2v_model', 'wb') as v :
     # pickle.dump(w2v_model, v)
     w2v_model.save(v)
 </div>
@@ -5487,7 +6333,7 @@ w2v_model.wv.most_similar(guess)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-43">
+            <clipboard-copy for="cell-44">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5502,7 +6348,7 @@ w2v_model.wv.most_similar(guess)</div>
 <span class="c1"># averaged_docs</span>
 <span class="n">docs</span><span class="p">[</span><span class="s1">&#39;wv_averaged_doc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">averaged_docs</span>
 </pre></div>
-<div id="cell-43" class="clipboard-copy-txt"># compute average vector for each document
+<div id="cell-44" class="clipboard-copy-txt"># compute average vector for each document
 averaged_docs = [np.mean([w2v_model.wv[word] for word in doc.split()], axis=0) for doc in docs.reduced_body ]
 # averaged_docs
 docs['wv_averaged_doc'] = averaged_docs</div>
@@ -5523,7 +6369,7 @@ docs['wv_averaged_doc'] = averaged_docs</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-44">
+            <clipboard-copy for="cell-45">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5535,7 +6381,7 @@ docs['wv_averaged_doc'] = averaged_docs</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#</span>
 </pre></div>
-<div id="cell-44" class="clipboard-copy-txt">#</div>
+<div id="cell-45" class="clipboard-copy-txt">#</div>
     
         </div>
     </div>
@@ -5564,7 +6410,7 @@ docs['wv_averaged_doc'] = averaged_docs</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-45">
+            <clipboard-copy for="cell-46">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5586,7 +6432,7 @@ docs['wv_averaged_doc'] = averaged_docs</div>
 
 <span class="c1"># kmeans.cluster_centers_</span>
 </pre></div>
-<div id="cell-45" class="clipboard-copy-txt">from sklearn.cluster import KMeans
+<div id="cell-46" class="clipboard-copy-txt">from sklearn.cluster import KMeans
 
 
 X = averaged_docs
@@ -5615,7 +6461,7 @@ kmeans.labels_
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-46">
+            <clipboard-copy for="cell-47">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5627,7 +6473,7 @@ kmeans.labels_
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">averaged_docs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
-<div id="cell-46" class="clipboard-copy-txt">len(averaged_docs[0])
+<div id="cell-47" class="clipboard-copy-txt">len(averaged_docs[0])
 </div>
     
         </div>
@@ -5669,7 +6515,7 @@ kmeans.labels_
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-47">
+            <clipboard-copy for="cell-48">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5684,41 +6530,11 @@ kmeans.labels_
 <span class="c1"># faire une reduction de dimension PCA</span>
 <span class="c1"># faire un KMeans pour trouver des clusters</span>
 </pre></div>
-<div id="cell-47" class="clipboard-copy-txt"># TODO classify 
+<div id="cell-48" class="clipboard-copy-txt"># TODO classify 
 # calculer le doc2vect ? --> le vecteur pour un document, pas pour juste les mots
 # faire une reduction de dimension PCA
 # faire un KMeans pour trouver des clusters
 </div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-48">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span>
-</pre></div>
-<div id="cell-48" class="clipboard-copy-txt"></div>
     
         </div>
     </div>
@@ -5787,6 +6603,36 @@ kmeans.labels_
 </div>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-51">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span>
+</pre></div>
+<div id="cell-51" class="clipboard-copy-txt"></div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -5801,7 +6647,7 @@ kmeans.labels_
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-51">
+            <clipboard-copy for="cell-52">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5844,7 +6690,7 @@ kmeans.labels_
 <span class="n">vectorized_docs</span> <span class="o">=</span> <span class="n">vectorize</span><span class="p">(</span><span class="n">docs</span><span class="o">.</span><span class="n">reduced_body</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">w2v_model</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">vectorized_docs</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">vectorized_docs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
-<div id="cell-51" class="clipboard-copy-txt"># vectorize a whole doc
+<div id="cell-52" class="clipboard-copy-txt"># vectorize a whole doc
 def vectorize(list_of_docs, model):
     """Generate vectors for list of documents using a Word Embedding
 
@@ -5916,7 +6762,7 @@ len(vectorized_docs), len(vectorized_docs[0])</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-52">
+            <clipboard-copy for="cell-53">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5928,7 +6774,7 @@ len(vectorized_docs), len(vectorized_docs[0])</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">vectorized_docs</span>
 </pre></div>
-<div id="cell-52" class="clipboard-copy-txt">vectorized_docs</div>
+<div id="cell-53" class="clipboard-copy-txt">vectorized_docs</div>
     
         </div>
     </div>
@@ -5969,7 +6815,7 @@ len(vectorized_docs), len(vectorized_docs[0])</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-53">
+            <clipboard-copy for="cell-54">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5981,7 +6827,7 @@ len(vectorized_docs), len(vectorized_docs[0])</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div id="cell-53" class="clipboard-copy-txt"></div>
+<div id="cell-54" class="clipboard-copy-txt"></div>
     
         </div>
     </div>
@@ -5999,7 +6845,7 @@ len(vectorized_docs), len(vectorized_docs[0])</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-54">
+            <clipboard-copy for="cell-55">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -6059,7 +6905,7 @@ len(vectorized_docs), len(vectorized_docs[0])</div>
     
     <span class="k">return</span> <span class="n">temp_df</span>
 </pre></div>
-<div id="cell-54" class="clipboard-copy-txt">import sklearn.metrics as metrics
+<div id="cell-55" class="clipboard-copy-txt">import sklearn.metrics as metrics
 
 #  from https://www.kaggle.com/code/michaelfumery/stackoverflow-questions-tag-generator/notebook?scriptVersionId=68023262
 
@@ -6125,7 +6971,7 @@ def metrics_score(model, df, y_true, y_pred):
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-55">
+            <clipboard-copy for="cell-56">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -6137,7 +6983,7 @@ def metrics_score(model, df, y_true, y_pred):
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div id="cell-55" class="clipboard-copy-txt"></div>
+<div id="cell-56" class="clipboard-copy-txt"></div>
     
         </div>
     </div>
@@ -6155,7 +7001,7 @@ def metrics_score(model, df, y_true, y_pred):
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-56">
+            <clipboard-copy for="cell-57">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -6167,7 +7013,7 @@ def metrics_score(model, df, y_true, y_pred):
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div id="cell-56" class="clipboard-copy-txt"></div>
+<div id="cell-57" class="clipboard-copy-txt"></div>
     
         </div>
     </div>
