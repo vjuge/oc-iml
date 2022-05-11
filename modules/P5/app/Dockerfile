@@ -1,11 +1,13 @@
 FROM python:3.9
-ENV PORT=5000
+ENV PORT=$PORT
 
 WORKDIR /
 
-COPY ./src /
-COPY ./notebook/vectorizer /utils
-COPY requirements.txt /requirements.txt
+COPY ./requirements.txt /requirements.txt
+
 RUN pip install --no-cache-dir --upgrade -r /requirements.txt
 
-CMD gunicorn --bind 0.0.0.0:$PORT main:app
+COPY main.py /main.py
+COPY vectorizer /vectorizer
+
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT

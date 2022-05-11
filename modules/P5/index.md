@@ -16,9 +16,7 @@
 
 At the project's root: `oc-iml/ $`
 
-> `cp requirements.txt modules/P5/evaluation`
->
->`docker build -t p5 ./modules/P5/evaluation/` 
+>`docker build -t p5 ./app` 
 >
 >`docker run -e PORT=80 -p 80:80 p5`
 
@@ -57,8 +55,4 @@ deployed on heroku:
 
 ### Dev
 
-`src $: flask run`
-
-or
-
-`gunicorn --bind 0.0.0.0:5000 main:app`
+`uvicorn main:app --reload`
