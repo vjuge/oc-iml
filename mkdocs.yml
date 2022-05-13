@@ -36,6 +36,7 @@ nav:
 - Module P5:
   - 'P5/index.md'
   - 'P5/notebook/module5.ipynb'
+  - 'P5/notebook/data_process.ipynb'
 
 plugins:
   - search
