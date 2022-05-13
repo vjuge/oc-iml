@@ -622,6 +622,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="notebook/data_process/" class="md-nav__link">
+        P5 - Data Processing
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -728,8 +742,7 @@
 <h2 id="build-and-run">Build and Run</h2>
 <p>At the project's root: <code>oc-iml/ $</code></p>
 <blockquote>
-<p><code>cp requirements.txt modules/P5/evaluation</code></p>
-<p><code>docker build -t p5 ./modules/P5/evaluation/</code> </p>
+<p><code>docker build -t p5 ./app</code> </p>
 <p><code>docker run -e PORT=80 -p 80:80 p5</code></p>
 </blockquote>
 <p>copy <code>notebook/vectorizer</code> to <code>src/utils/vectorizer</code> (included in the Dockerfile)</p>
@@ -749,9 +762,7 @@
 <p>deployed on heroku: </p>
 <p><a href="https://ociml-module5.herokuapp.com/">https://ociml-module5.herokuapp.com/</a></p>
 <h3 id="dev">Dev</h3>
-<p><code>src $: flask run</code></p>
-<p>or</p>
-<p><code>gunicorn --bind 0.0.0.0:5000 main:app</code></p>
+<p><code>uvicorn main:app --reload</code></p>
 
               
             </article>
