@@ -50,7 +50,7 @@ scale down / up:
 
 deployed on heroku: 
 
-<https://ociml-module5.herokuapp.com/>
+<https://ociml-module5.herokuapp.com/docs/>
 
 
 ### Dev
