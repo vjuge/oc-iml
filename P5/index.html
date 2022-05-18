@@ -552,29 +552,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#topic" class="md-nav__link">
-    Topic
+  <a href="#documents-extraction" class="md-nav__link">
+    Documents extraction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bibliography" class="md-nav__link">
-    Bibliography
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-and-run" class="md-nav__link">
-    Build and Run
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploy" class="md-nav__link">
-    Deploy
+  <a href="#reposiroty-structure" class="md-nav__link">
+    Reposiroty structure
   </a>
   
 </li>
@@ -583,19 +569,6 @@
   <a href="#use" class="md-nav__link">
     Use
   </a>
-  
-    <nav class="md-nav" aria-label="Use">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
-    Dev
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -669,29 +642,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#topic" class="md-nav__link">
-    Topic
+  <a href="#documents-extraction" class="md-nav__link">
+    Documents extraction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bibliography" class="md-nav__link">
-    Bibliography
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-and-run" class="md-nav__link">
-    Build and Run
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploy" class="md-nav__link">
-    Deploy
+  <a href="#reposiroty-structure" class="md-nav__link">
+    Reposiroty structure
   </a>
   
 </li>
@@ -700,19 +659,6 @@
   <a href="#use" class="md-nav__link">
     Use
   </a>
-  
-    <nav class="md-nav" aria-label="Use">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
-    Dev
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -734,35 +680,17 @@
 
 
 <h1 id="module-p5">Module P5</h1>
-<h2 id="topic">Topic</h2>
+<h2 id="documents-extraction">Documents extraction</h2>
 <p><a href="https://data.stackexchange.com/stackoverflow/query/new">https://data.stackexchange.com/stackoverflow/query/new</a></p>
-<h2 id="bibliography">Bibliography</h2>
-<p><a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">https://colah.github.io/posts/2015-08-Understanding-LSTMs/</a></p>
-<p><a href="https://openclassrooms.com/fr/courses/6532301-introduction-to-natural-language-processing">https://openclassrooms.com/fr/courses/6532301-introduction-to-natural-language-processing</a></p>
-<h2 id="build-and-run">Build and Run</h2>
-<p>At the project's root: <code>oc-iml/ $</code></p>
-<blockquote>
-<p><code>docker build -t p5 ./app</code> </p>
-<p><code>docker run -e PORT=80 -p 80:80 p5</code></p>
-</blockquote>
-<p>copy <code>notebook/vectorizer</code> to <code>src/utils/vectorizer</code> (included in the Dockerfile)</p>
-<h2 id="deploy">Deploy</h2>
-<p>Deploy on heroku</p>
-<p><code>$ heroku login</code></p>
-<p><code>$ heroku container:login</code></p>
-<p>into module P5 folder (where docker file is)</p>
-<p><code>$ heroku container:push web -a ociml-module5</code></p>
-<p><code>$ heroku container:release web -a ociml-module5</code></p>
-<p>logs:</p>
-<p><code>heroku logs --tail -a ociml-module5</code></p>
-<p>scale down / up: </p>
-<p><code>heroku ps:scale web=0 -a ociml-module5</code>
-<code>heroku ps:scale web=1 -a ociml-module5</code></p>
+<h2 id="reposiroty-structure">Reposiroty structure</h2>
+<p><a href="./notebook/">./notebook</a> contains the notebook with the data extraction, models created, etc.</p>
+<p><a href="./backend/">./backend</a> contains the application code for the API backend</p>
+<p><a href="./frontend/">./frontend</a> contains the application code for the frontend</p>
+<p><a href="./sample/">./sample</a> contains a notebook provided as a sample, for educational purposes</p>
 <h2 id="use">Use</h2>
 <p>deployed on heroku: </p>
-<p><a href="https://ociml-module5.herokuapp.com/">https://ociml-module5.herokuapp.com/</a></p>
-<h3 id="dev">Dev</h3>
-<p><code>uvicorn main:app --reload</code></p>
+<p><a href="https://ociml-module5-frontend.herokuapp.com/">https://ociml-module5-frontend.herokuapp.com/</a></p>
+<p>(backend : <a href="https://ociml-module5.herokuapp.com/docs/">https://ociml-module5.herokuapp.com/docs/</a>)</p>
 
               
             </article>

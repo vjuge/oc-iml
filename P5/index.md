@@ -1,58 +1,25 @@
 # Module P5
 
-## Topic
+## Documents extraction
 
 <https://data.stackexchange.com/stackoverflow/query/new>
 
 
+## Reposiroty structure
 
-## Bibliography
+[./notebook](./notebook/) contains the notebook with the data extraction, models created, etc.
 
-<https://colah.github.io/posts/2015-08-Understanding-LSTMs/>
+[./backend](./backend/) contains the application code for the API backend
 
-<https://openclassrooms.com/fr/courses/6532301-introduction-to-natural-language-processing>
+[./frontend](./frontend/) contains the application code for the frontend
 
-## Build and Run
-
-At the project's root: `oc-iml/ $`
-
->`docker build -t p5 ./app` 
->
->`docker run -e PORT=80 -p 80:80 p5`
-
-copy `notebook/vectorizer` to `src/utils/vectorizer` (included in the Dockerfile)
-
-## Deploy
-
-Deploy on heroku
-
-`$ heroku login`
-
-`$ heroku container:login`
-
-
-into module P5 folder (where docker file is)
-
-`$ heroku container:push web -a ociml-module5 `
-
-`$ heroku container:release web -a ociml-module5`
-
-logs:
-
-`heroku logs --tail -a ociml-module5`
-
-scale down / up: 
-
-`heroku ps:scale web=0 -a ociml-module5`
-`heroku ps:scale web=1 -a ociml-module5`
+[./sample](./sample/) contains a notebook provided as a sample, for educational purposes
 
 ## Use
 
 deployed on heroku: 
 
-<https://ociml-module5.herokuapp.com/>
 
+<https://ociml-module5-frontend.herokuapp.com/>
 
-### Dev
-
-`uvicorn main:app --reload`
+(backend : <https://ociml-module5.herokuapp.com/docs/>)
