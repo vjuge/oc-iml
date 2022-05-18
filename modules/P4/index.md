@@ -1,5 +1,9 @@
 # Module P4
 
+During this module, we try to categorize customers of an online store
+
+dataset is available [here](https://www.kaggle.com/olistbr/brazilian-ecommerce)
+
 ## Reading List
 
 ### SkLearn

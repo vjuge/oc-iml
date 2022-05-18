@@ -33,18 +33,26 @@ nav:
   - 'P4/index.md'
   - 'P4/P4_01.ipynb'
   - TP 1: 'P4/TP/01_Explorez_vos_données_avec_des_algorithmes_non_supervisés/index.md'
+- Module P5:
+  - 'P5/index.md'
+  - 'P5/notebook/module5.ipynb'
+  - 'P5/notebook/data_process.ipynb'
 
 plugins:
   - search
   - mkdocs-jupyter :
       ignore_h1_titles: False
-      ignore:  ["P2/input/*"]
-      include: ["P2/*.ipynb", "P3/*.ipynb", "P4/*.ipynb"]
+      ignore:  ["P2/input/*", "P5/app/*", "P5/sample/*", "P5/TP/*"]
+      include: ["P2/*.ipynb", "P3/*.ipynb", "P4/*.ipynb", "P5/notebook/*.ipynb"]
       include_source: True
+      kernel_name: python3
   - exclude:
       glob:
         - P2/tmp/*
         - "*.csv"
         - "*.gzip"
+        - P5/app/*
+        - P5/sample/*
+        - P5/TP/*
       regex:
         - '.*\.(tmp|bin|tar)$'
