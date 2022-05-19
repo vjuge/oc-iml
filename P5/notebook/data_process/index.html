@@ -3941,6 +3941,270 @@ docs.no_tags.plot.hist(figsize=(10, 8))
 </div>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-29">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">empty_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">doc_tag</span> <span class="ow">in</span> <span class="n">docs_tags</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">doc_tag</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">empty_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">empty_count</span>
+</pre></div>
+<div id="cell-29" class="clipboard-copy-txt">empty_count = 0
+
+for doc_tag in docs_tags:
+    if len(doc_tag) == 0:
+        empty_count += 1
+
+empty_count</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>794</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-30">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+
+<span class="n">full_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">doc_tag</span> <span class="ow">in</span> <span class="n">docs_tags</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">doc_tag</span><span class="p">:</span>
+        <span class="n">full_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+
+<span class="n">tag</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">full_list</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;count&#39;</span><span class="p">:</span> <span class="n">count</span><span class="p">,</span> <span class="s1">&#39;tag&#39;</span><span class="p">:</span> <span class="n">tag</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+<div id="cell-30" class="clipboard-copy-txt">import seaborn as sns
+
+
+full_list = []
+
+for doc_tag in docs_tags:
+    for tag in doc_tag:
+        full_list.append(tag)
+
+tag, count = np.unique(full_list, return_counts=True)
+df = pd.DataFrame({'count': count, 'tag': tag})
+df.sort_values('count', ascending=False).head(20)</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>93</th>
+      <td>3054</td>
+      <td>java</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>3025</td>
+      <td>python</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>2695</td>
+      <td>javascript</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>2644</td>
+      <td>c#</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>2391</td>
+      <td>ios</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1994</td>
+      <td>android</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>1820</td>
+      <td>c++</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>1402</td>
+      <td>.net</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>1323</td>
+      <td>iphone</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>1297</td>
+      <td>objective-c</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>1203</td>
+      <td>html</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>994</td>
+      <td>jquery</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>932</td>
+      <td>php</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>915</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>811</td>
+      <td>linux</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>727</td>
+      <td>css</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>674</td>
+      <td>node.js</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>661</td>
+      <td>performance</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>657</td>
+      <td>sql</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>635</td>
+      <td>swift</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -3955,7 +4219,7 @@ docs.no_tags.plot.hist(figsize=(10, 8))
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-29">
+            <clipboard-copy for="cell-31">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3974,7 +4238,7 @@ docs.no_tags.plot.hist(figsize=(10, 8))
     <span class="c1"># print(cleaned)</span>
     <span class="k">return</span> <span class="n">cleaned</span>
 </pre></div>
-<div id="cell-29" class="clipboard-copy-txt">def clean(text):
+<div id="cell-31" class="clipboard-copy-txt">def clean(text):
     cleaned = remove_code(text)
     # print(cleaned)
     cleaned = tokenize_sw_lem(' '.join(cleaned))
@@ -4000,7 +4264,7 @@ docs.no_tags.plot.hist(figsize=(10, 8))
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-30">
+            <clipboard-copy for="cell-32">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4018,7 +4282,7 @@ docs.no_tags.plot.hist(figsize=(10, 8))
 <span class="s1">&#39;&#39;&#39;</span>
 <span class="n">clean</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
-<div id="cell-30" class="clipboard-copy-txt">text = '''
+<div id="cell-32" class="clipboard-copy-txt">text = '''
 This is a very dirty text ! There are UPPERCASE and mistpyte words.
 also they are not common technical words like java with 'python'
 <pre>toto= 'my string'</pre>
