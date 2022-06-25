@@ -134,6 +134,10 @@ P_01/input/open-food-facts/openfoodfacts-mongodbdump.tar
 # Idea
 .idea
 
+# MISC
+.obsidian
+.vscode
+
 
 /modules/P2/Exercice/P_01_decrivez-et-nettoyez-votre-jeu-de-donnees
 /modules/P2/doc/webinaire

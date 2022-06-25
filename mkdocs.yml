@@ -37,13 +37,16 @@ nav:
   - 'P5/index.md'
   - 'P5/notebook/module5.ipynb'
   - 'P5/notebook/data_process.ipynb'
+- Module P6:
+  - 'P6/index.md'
+  - 'P6/module_P6_V3.ipynb'
 
 plugins:
   - search
   - mkdocs-jupyter :
       ignore_h1_titles: False
-      ignore:  ["P2/input/*", "P5/app/*", "P5/sample/*", "P5/TP/*"]
-      include: ["P2/*.ipynb", "P3/*.ipynb", "P4/*.ipynb", "P5/notebook/*.ipynb"]
+      ignore:  ["P2/input/*", "P5/app/*", "P5/sample/*", "P5/TP/*", "P6/TP/*", "P6/examples/*"]
+      include: ["P2/*.ipynb", "P3/*.ipynb", "P4/*.ipynb", "P5/notebook/*.ipynb", "P6/module_P6_V3.ipynb"]
       include_source: True
       kernel_name: python3
   - exclude:
