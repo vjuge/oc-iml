@@ -57,5 +57,6 @@ plugins:
         - P5/app/*
         - P5/sample/*
         - P5/TP/*
+        - P6/*.h5
       regex:
         - '.*\.(tmp|bin|tar)$'
