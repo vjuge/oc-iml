@@ -134,6 +134,10 @@ P_01/input/open-food-facts/openfoodfacts-mongodbdump.tar
 # Idea
 .idea
 
+# MISC
+.obsidian
+.vscode
+
 
 /modules/P2/Exercice/P_01_decrivez-et-nettoyez-votre-jeu-de-donnees
 /modules/P2/doc/webinaire
@@ -145,3 +149,11 @@ P_01/input/open-food-facts/openfoodfacts-mongodbdump.tar
 
 /modules/P4/dataset
 /modules/P4/TP/01_Explorez_vos_données_avec_des_algorithmes_non_supervisés/dataset/mnist_784.csv
+/modules/P6/~
+/modules/P6/examples/~
+
+# MLFLOWS
+/mlruns
+/modules/*/mlruns
+/modules/*/outputs
+
