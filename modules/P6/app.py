@@ -1,6 +1,7 @@
 import tensorflow as tf
 import gradio as gr
 import pickle
+import numpy as np
 
 IMG_SIZE = 299
 NO_BREEDS = 120
