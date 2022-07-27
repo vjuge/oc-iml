@@ -18,7 +18,7 @@ def predict(image):
 
     # Apply preprocess Xception
     # img_array = img_array.reshape((-1, 299, 299, 3))
-    image = tf.keras.applications.xception.preprocess_input(image)
+    # image = tf.keras.applications.xception.preprocess_input(image)
 
     # # Predictions
     prediction = model.predict(image).flatten()
