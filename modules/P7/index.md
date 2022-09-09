@@ -57,3 +57,5 @@ ScaleCast (ARMIA): <https://scalecast-examples.readthedocs.io/en/latest/arima/ar
 Article: <https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d>
 
 Research paper: <https://www.researchgate.net/publication/347999026_A_Transformer_Self-Attention_Model_for_Time_Series_Forecasting>
+
+TensorFlow using Transformers tutorial: <https://www.tensorflow.org/text/tutorials/transformer#attention_plots>
