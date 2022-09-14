@@ -38,7 +38,16 @@ We compare two models for prediction: popular ARIMA and new Transformer-based on
 
 ### ARIMA
 
+Different kinds of ARIMA exists :
 
+* autoregressive models: AR(p)
+* moving average models: MA(q)
+* mixed autoregressive moving average models: ARMA(p, q)
+* integration models: ARIMA(p, d, q)
+* seasonal models: SARIMA(P, D, Q, s)
+* regression with errors that follow one of the above ARIMA-type models
+
+_source: <https://www.statsmodels.org/devel/generated/statsmodels.tsa.arima.model.ARIMA.html>_
 
 ### Transformer
 
