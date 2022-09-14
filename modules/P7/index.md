@@ -68,3 +68,13 @@ Article: <https://towardsdatascience.com/attention-for-time-series-classificatio
 Research paper: <https://www.researchgate.net/publication/347999026_A_Transformer_Self-Attention_Model_for_Time_Series_Forecasting>
 
 TensorFlow using Transformers tutorial: <https://www.tensorflow.org/text/tutorials/transformer#attention_plots>
+
+
+# Educational Material
+
+Autocorrelation, partial autocorrelation: <https://machinelearningmastery.com/gentle-introduction-autocorrelation-partial-autocorrelation/>
+
+Seasonality decomposition: <https://machinelearningmastery.com/decompose-time-series-data-trend-seasonality/>
+
+Augmented Dickey Fuller test (ADF Test): <https://medium.com/@cmukesh8688/why-is-augmented-dickey-fuller-test-adf-test-so-important-in-time-series-analysis-6fc97c6be2f0>
+
