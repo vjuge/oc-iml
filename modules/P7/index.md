@@ -78,3 +78,9 @@ Seasonality decomposition: <https://machinelearningmastery.com/decompose-time-se
 
 Augmented Dickey Fuller test (ADF Test): <https://medium.com/@cmukesh8688/why-is-augmented-dickey-fuller-test-adf-test-so-important-in-time-series-analysis-6fc97c6be2f0>
 
+
+first article to read: <https://towardsdatascience.com/time-series-forecasting-with-deep-learning-and-attention-mechanism-2d001fc871fc>
+
+a complete overview an tutorial : <https://arxiv.org/pdf/2004.10240.pdf>
+
+tensorflow appliled to timeseries: <https://keras.io/examples/timeseries/timeseries_transformer_classification/>
