@@ -69,6 +69,8 @@ Research paper: <https://www.researchgate.net/publication/347999026_A_Transforme
 
 TensorFlow using Transformers tutorial: <https://www.tensorflow.org/text/tutorials/transformer#attention_plots>
 
+Prophet librairy : <https://facebook.github.io/prophet/>
+
 
 # Educational Material
 
@@ -84,3 +86,7 @@ first article to read: <https://towardsdatascience.com/time-series-forecasting-w
 a complete overview an tutorial : <https://arxiv.org/pdf/2004.10240.pdf>
 
 tensorflow appliled to timeseries: <https://keras.io/examples/timeseries/timeseries_transformer_classification/>
+
+How to make a transformer for time series forecasting (Pytorch) : <https://towardsdatascience.com/how-to-make-a-pytorch-transformer-for-time-series-forecasting-69e073d4061e>
+
+Fonctionnement des Transformers : <https://www.openstudio.fr/2022/02/08/fonctionnement-des-transformers-et-leurs-applications/>
