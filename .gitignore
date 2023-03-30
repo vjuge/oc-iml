@@ -131,9 +131,6 @@ dmypy.json
 P_01/input/open-food-facts/en.openfoodfacts.org.products.csv
 P_01/input/open-food-facts/openfoodfacts-mongodbdump.tar
 
-# Idea
-.idea
-
 # MISC
 .obsidian
 .vscode
