@@ -1,0 +1,713 @@
+<div class="project">
+    <div class="sc-kDDrLX iZkxbb MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 projects-0-projects1">
+        <div class="projects-0-projects23">
+            <div class="projects-0-projects32">
+                <header class="sc-kDDrLX cHpUJv MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 sc-iqcoie kywnsk MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic projects-0-projects3">
+                    <div class="sc-bKhNmF laqZpQ MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular projects-0-projects36 projects-0-projects5 ">
+                        <div class="projects-0-projects37 ">
+                            <div>
+                                <div class="projects-0-projects34 projects-0-projects15"><a
+                                        class="sc-bczRLJ ksPXQv MuiTypography-root MuiTypography-subtitle1 projects-0-projects40"
+                                        href="/fr/dashboard/paths" aria-label="Mon parcours">
+                                    <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects41"
+                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                         data-testid="ArrowBackIcon">
+                                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                                    </svg>
+                                    Mon parcours</a></div>
+                                <div class="projects-0-projects7">
+                                    <div class="projects-0-projects8">
+                                        <div class="projects-0-projects42"
+                                             style="--color:#2e7e32; --iconSizeSmall:0.75em; --iconSizeBig:1.2em;">
+                                            <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects44"
+                                                 focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                 data-testid="DoneIcon">
+                                                <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="sc-bczRLJ hATZVy MuiTypography-root MuiTypography-overline projects-0-projects9"
+                                              style="color: rgb(46, 126, 50);">Projet validé</span></div>
+                                    <h1 class="sc-bczRLJ bPuYtx MuiTypography-root MuiTypography-h2 projects-0-projects10">
+                                        Catégorisez automatiquement des questions</h1></div>
+                            </div>
+                        </div>
+                        <div class="projects-0-projects39"></div>
+                    </div>
+                    <div class="sc-ezWXYA hDDgUQ MuiTabs-root projects-0-projects6">
+                        <div class="sc-fFtkDt dIqmVM MuiTabs-scrollableX MuiTabs-hideScrollbar"
+                             style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"></div>
+                        <div class="sc-kBjqcv ebpwIn MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX"
+                             style="margin-bottom: 0px;">
+                            <div class="sc-gILORG jWzGZq MuiTabs-flexContainer" role="tablist"><a
+                                    class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-hlqNbq jBpnXH MuiTab-root projects-0-projects47 MuiTab-textColorPrimary projects-0-projects2"
+                                    tabindex="-1" role="tab" aria-selected="false"
+                                    href="/fr/paths/148/projects/111/assignment"><h2 class="projects-0-projects13">
+                                Mission</h2><span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a><a
+                                    class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-hlqNbq jBpnXH MuiTab-root projects-0-projects47 MuiTab-textColorPrimary projects-0-projects2"
+                                    tabindex="-1" role="tab" aria-selected="false"
+                                    href="/fr/paths/148/projects/111/courses"><h2 class="projects-0-projects13">
+                                Cours</h2><span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a><a
+                                    class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-hlqNbq jBpnXH MuiTab-root projects-0-projects47 MuiTab-textColorPrimary Mui-selected projects-0-projects48 projects-0-projects12 projects-0-projects2"
+                                    tabindex="0" role="tab" aria-selected="true"
+                                    href="/fr/paths/148/projects/111/resources"><h2 class="projects-0-projects13">
+                                Ressources</h2><span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a><a
+                                    class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-hlqNbq jBpnXH MuiTab-root projects-0-projects47 MuiTab-textColorPrimary projects-0-projects2"
+                                    tabindex="-1" role="tab" aria-selected="false"
+                                    href="/fr/paths/148/projects/111/project-evaluation"><h2
+                                    class="projects-0-projects13">Évaluation</h2><span
+                                    class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></div>
+                            <span class="sc-eIWpXs kuEqrG MuiTabs-indicator projects-0-projects4"
+                                  style="left: 164.86px; width: 123.74px;"></span></div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="projects-0-projects23">
+        <div class="projects-0-projects109 projects-0-projects110">
+            <div class="projects-0-projects114"><span class="projects-0-projects115"><svg
+                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="StarsIcon"><path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"></path></svg></span><span
+                    class="projects-0-projects116 projects-0-projects118"></span></div>
+            <div class="projects-0-projects111"><h3
+                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1 projects-0-projects112">Contenu
+                exclusif</h3>
+                <hr class="sc-bBrHrO eyKjGO MuiDivider-root MuiDivider-fullWidth projects-0-projects113">
+                <ul class="sc-bjUoiL hbWyGi MuiList-root MuiList-padding projects-0-projects117">
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://app.livestorm.co/openclassrooms-1/deployez-une-api-de-prediction?type=detailed"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://app.livestorm.co/openclassrooms-1/deployez-une-api-de-prediction?type=detailed">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Webinaire : Déployez une API de prédiction</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Vous n'avez pas pu assister au webinaire ? Visionnez le replay sur Livestorm.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Webinars/Data/API_Dec_2020/We%CC%81binaire+-+API+Data+-+E%CC%81nonce%CC%81.pdf"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Webinars/Data/API_Dec_2020/We%CC%81binaire+-+API+Data+-+E%CC%81nonce%CC%81.pdf">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Énoncé du Webinaire : Déployez une API de prédiction</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Téléchargez ici l'exercice pour vous exercer avant de regarder le webinaire.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Webinars/Data/API_Dec_2020/corrige%CC%81_deploy_ml_api.zip"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Webinars/Data/API_Dec_2020/corrige%CC%81_deploy_ml_api.zip">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Corrigé du webinaire : Déployez une API de prédiction</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Téléchargez ici le corrigé final présenté par l'expert pendant le webinaire.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects-0-projects109 projects-0-projects110">
+            <div class="projects-0-projects114"><span class="projects-0-projects115"><svg
+                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="OndemandVideoIcon"><path
+                    d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6-7 4V7z"></path></svg></span>
+            </div>
+            <div class="projects-0-projects111"><h3
+                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1 projects-0-projects112">
+                Vidéo</h3>
+                <hr class="sc-bBrHrO eyKjGO MuiDivider-root MuiDivider-fullWidth projects-0-projects113">
+                <ul class="sc-bjUoiL hbWyGi MuiList-root MuiList-padding projects-0-projects117">
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://www.youtube.com/watch?v=4o9qzbssfII" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.youtube.com/watch?v=4o9qzbssfII">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Git &amp; GitHub : Le Cours Pour Les Débutants</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Tutoriel utile pour maîtriser la ligne de commande (Git Bash).</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://www.youtube.com/watch?v=cRounphvOC8" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.youtube.com/watch?v=cRounphvOC8">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">TUTO GIT GUI : le guide complet</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Tutoriel utile pour maîtriser l'interface Web (Git GUI).</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://www.youtube.com/watch?v=SCs8N_-t3cE" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.youtube.com/watch?v=SCs8N_-t3cE">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Le NLP illustré avec Python</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Présentation du NLP et des techniques associées</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://www.youtube.com/watch?v=TKjjlp5_r7o" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.youtube.com/watch?v=TKjjlp5_r7o">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">How to Create an LDA Topic Model in Python with Gensim</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Exemple de mise en oeuvre de LDA avec la librairie GENSIM</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects-0-projects109 projects-0-projects110">
+            <div class="projects-0-projects114"><span class="projects-0-projects115"><svg
+                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="NotesIcon"><path
+                    d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"></path></svg></span></div>
+            <div class="projects-0-projects111"><h3
+                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1 projects-0-projects112">
+                Article</h3>
+                <hr class="sc-bBrHrO eyKjGO MuiDivider-root MuiDivider-fullWidth projects-0-projects113">
+                <ul class="sc-bjUoiL hbWyGi MuiList-root MuiList-padding projects-0-projects117">
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">One-vs-Rest and One-vs-One for Multi-Class Classification</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Article en anglais, sur le blog Machine Learning Mastery (2020).</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://datascientest.com/introduction-au-nlp-natural-language-processing"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://datascientest.com/introduction-au-nlp-natural-language-processing">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Introduction au NLP (Natural Language Processing)</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Présentation des principes du NLP et des cas d’utilisation</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Tutoriel de preprocessing de texte</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Tutoriel de démarche de nettoyage de texte.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://www.actuia.com/contribution/victorbigand/tutoriel-tal-pour-les-debutants-classification-de-texte/"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.actuia.com/contribution/victorbigand/tutoriel-tal-pour-les-debutants-classification-de-texte/">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Tutoriel de preprocessing et classification de texte</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Tutoriel d’initiation au nettoyage, preprocessing et classification de texte</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://towardsdatascience.com/natural-language-processing-nlp-for-machine-learning-d44498845d5b"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://towardsdatascience.com/natural-language-processing-nlp-for-machine-learning-d44498845d5b">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Natural Language Processing (NLP) for Machine Learning (en anglais)</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Tutoriel en anglais de preprocessing de texte</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Evaluate Topic Models Latent Dirichlet Allocation (LDA) (en anglais)</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Présentation d’approches d’évaluation de la pertinence des topics créés via LDA.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://www.irit.fr/IRIS-site/images/seminairs/Thonet2016.pdf"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.irit.fr/IRIS-site/images/seminairs/Thonet2016.pdf">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Tutoriel sur les Topic Models</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Présentation de modèles de création de topics tel que LDA</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://lesdieuxducode.com/blog/2019/4/bert--le-transformer-model-qui-sentraine-et-qui-represente"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://lesdieuxducode.com/blog/2019/4/bert--le-transformer-model-qui-sentraine-et-qui-represente">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Principes de BERT</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Article d’introduction à BERT sur le blog "Les dieux du code".</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects-0-projects109 projects-0-projects110">
+            <div class="projects-0-projects114"><span class="projects-0-projects115"><svg
+                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="DescriptionIcon"><path
+                    d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg></span>
+            </div>
+            <div class="projects-0-projects111"><h3
+                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1 projects-0-projects112">
+                Document</h3>
+                <hr class="sc-bBrHrO eyKjGO MuiDivider-root MuiDivider-fullWidth projects-0-projects113">
+                <ul class="sc-bjUoiL hbWyGi MuiList-root MuiList-padding projects-0-projects117">
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://www.nltk.org/" target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://www.nltk.org/">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Librairie NLTK</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Site de référence de la librairie NLTK</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://code.tutsplus.com/fr/tutorials/introducing-the-natural-language-toolkit-nltk--cms-28620"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://code.tutsplus.com/fr/tutorials/introducing-the-natural-language-toolkit-nltk--cms-28620">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Introduction au NLP avec la librairie NLTK (NLP)</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Présentation de l’utilisation de la librairie NLTK</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Tutoriel Scikit Learn sur le traitement de texte</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Tutoriel de Scikit Learn de concepts de base du traitement de texte</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://radimrehurek.com/gensim/models/ldamodel.html" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://radimrehurek.com/gensim/models/ldamodel.html">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Gensim - Documentation LDA</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Documentation Gensim de référence de Bag Of Words et LDA</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://datascientest.com/wordcloud-python" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://datascientest.com/wordcloud-python">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">WordCloud</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Guide de génération de WordCloud</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://github.com/TomasKeller/python-LDAviz" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://github.com/TomasKeller/python-LDAviz">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">LDAVis</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Outil de représentation et d’analyse des topics d’un LDA</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P6/Exemple_Tweets_Feature-extraction_Sentence+Embedding_V1.1.ipynb"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P6/Exemple_Tweets_Feature-extraction_Sentence+Embedding_V1.1.ipynb">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Notebook - Exemple de Sentence Embedding</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Notebook présentant des exemples de Word2Vec, BERT et USE</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://huggingface.co/docs/transformers/model_doc/bert#transformers.TFBertModel"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://huggingface.co/docs/transformers/model_doc/bert#transformers.TFBertModel">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Word/sentence Embedding BERT - Huggingface</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Exemple de Word Embedding BERT via Huggingface</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/4"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/4">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Word/sentence Embedding BERT - Hub Tensorflow</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Exemple de Word Embedding BERT via le hub Tensorflow </span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://tfhub.dev/google/universal-sentence-encoder/4" target="_blank"
+                            rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://tfhub.dev/google/universal-sentence-encoder/4">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Sentence Embedding USE</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Exemple de Sentence Embedding USE (Universal Sentence Encoder)</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Ing%C3%A9nieur_IA_P7/Seuils_gratuite%CC%81_Azure.pdf"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Ing%C3%A9nieur_IA_P7/Seuils_gratuite%CC%81_Azure.pdf">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><span class="projects-0-projects123"><svg
+                                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium projects-0-projects124"
+                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="StarIcon"><path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><h6
+                                    class="sc-bczRLJ bSMOBP MuiTypography-root MuiTypography-subtitle2 projects-0-projects125">Essentiel</h6></span><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Bonnes pratiques pour une utilisation gratuite d'Azure</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Ressource essentielle si vous réalisez le projet avec Microsoft Azure.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects-0-projects109 projects-0-projects110">
+            <div class="projects-0-projects114"><span class="projects-0-projects115"><svg
+                    class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="BookIcon"><path
+                    d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path></svg></span>
+            </div>
+            <div class="projects-0-projects111"><h3
+                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1 projects-0-projects112">
+                Cours</h3>
+                <hr class="sc-bBrHrO eyKjGO MuiDivider-root MuiDivider-fullWidth projects-0-projects113">
+                <ul class="sc-bjUoiL hbWyGi MuiList-root MuiList-padding projects-0-projects117">
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://openclassrooms.com/fr/courses/4525361-realisez-un-dashboard-avec-vos-donnees/5774796-programmez-un-serveur-web-avec-flask"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://openclassrooms.com/fr/courses/4525361-realisez-un-dashboard-avec-vos-donnees/5774796-programmez-un-serveur-web-avec-flask">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Programmez un serveur web avec Flask</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Chapitre du cours "Réalisez un dashboard avec Tableau"</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Concevez un site avec Flask</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Cours d'OpenClassrooms sur la création d’une application web avec Flask.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://openclassrooms.com/fr/courses/6532301-introduction-to-natural-language-processing"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://openclassrooms.com/fr/courses/6532301-introduction-to-natural-language-processing">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Introduction to Natural Language Processing (en anglais)</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Cours OpenClassrooms d’introduction au NLP.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0" href="https://nlp-ensae.github.io/" target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://nlp-ensae.github.io/">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Machine Learning for Natural Language Processing (en anglais)</h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Cours ENSAE très complet sur le NLP.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                    <li class="projects-0-projects119"><a
+                            class="sc-hKMtZM eKdPBG MuiButtonBase-root sc-kgUAyh kWkEDI MuiListItem-root MuiListItem-padding MuiListItem-divider MuiListItem-button projects-0-projects121"
+                            tabindex="0"
+                            href="https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql"
+                            target="_blank" rel="noopener"
+                            data-event="ExternalResourceRedirection|Clicked|111::https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql">
+                        <div class="sc-hHLeRK dXyqvs MuiListItemText-root MuiListItemText-multiline projects-0-projects122">
+                            <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 MuiListItemText-primary"><div
+                                    class="projects-0-projects120"><h4
+                                    class="sc-bczRLJ hlmlyD MuiTypography-root MuiTypography-subtitle1">Implémentez vos bases de données relationnelles avec SQL </h4></div></span>
+                            <p class="sc-bczRLJ bEkTno MuiTypography-root MuiTypography-body2 MuiListItemText-secondary">
+                                <span class="sc-bczRLJ jQuwSB MuiTypography-root MuiTypography-body1 projects-0-projects126">Cours OpenClassrooms pour réviser le SQL.</span>
+                            </p></div>
+                        <svg class="sc-fEOsli ciCWDI MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false"
+                             aria-hidden="true" viewBox="0 0 24 24" data-testid="OpenInNewIcon">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        <span class="sc-gsnTZi gCNzYw MuiTouchRipple-root"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
