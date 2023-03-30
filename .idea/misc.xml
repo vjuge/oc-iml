@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Python 3.9 (oc-iml)" project-jdk-type="Python SDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="4" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/modules/P7/gluonts.ipynb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="493" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/modules/P8/module-p8.ipynb" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>

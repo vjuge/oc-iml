@@ -1,0 +1,4 @@
+kaggle : https://www.kaggle.com/code/vincentjuge/notebookcfae1d1866
+
+github : https://github.com/vjuge/oc-iml/blob/master/modules/P8/module-p8.ipynb
+
